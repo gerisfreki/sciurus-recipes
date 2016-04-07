@@ -5,13 +5,9 @@
     <key>Description</key>
     <string>Downloads latest Skype disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.Skype</string>
+    <string>lan.sciurus.autopkg.munki.MicrosoftSkype</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>Skype</string>
-        <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -23,15 +19,19 @@
             <key>display_name</key>
             <string>Skype</string>
             <key>name</key>
-            <string>%NAME%</string>
+            <string>MicrosoftSkype</string>
+            <key>developer</key>
+            <string>Microsoft</string>
+            <key>category</key>
+            <string>Kommunikation</string>
             <key>unattended_install</key>
             <true/>
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.0</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.Skype</string>
+    <string>lan.sciurus.autopkg.download.MicrosoftSkype</string>
     <key>Process</key>
     <array>
         <dict>
@@ -63,7 +63,7 @@
                 <key>pkg_path</key>
                 <string>%pathname%</string>
                 <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
+                <string>Kommunikation/Microsoft Skype</string>
                 <key>version_comparison_key</key>
                 <string>CFBundleVersion</string>
             </dict>

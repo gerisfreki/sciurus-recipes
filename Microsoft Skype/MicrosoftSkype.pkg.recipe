@@ -5,16 +5,16 @@
     <key>Description</key>
     <string>Downloads latest Skype disk image and builds a package.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.pkg.Skype</string>
+    <string>lan.sciurus.autopkg.pkg.MicrosoftSkype</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>Skype</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.Skype</string>
+    <string>lan.sciurus.autopkg.download.MicrosoftSkype</string>
     <key>Process</key>
     <array>
         <dict>
