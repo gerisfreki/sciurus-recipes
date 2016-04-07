@@ -3,35 +3,31 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads and imports a pre-built Munki 2 from
-https://munkibuilds.org. DOWNLOAD_URL can be overridden to
-an alternate URL, from either your own server or an alternate
-package version, ie.
-https://munkibuilds.org/2.2.2.2416/munkitools-2.2.2.2416.pkg</string>
+    <string>Downloads and imports a pre-built Munki 2.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.munkitools2-autobuild</string>
+    <string>lan.sciurus.autopkg.munki.munkitools.autobuild</string>
     <key>Input</key>
     <dict>
         <key>DOWNLOAD_URL</key>
         <string>https://munkibuilds.org/munkitools2-latest.pkg</string>
         <key>NAME</key>
-        <string>munkitools2</string>
+        <string>MunkiTools2</string>
         <key>MUNKI_CATALOG</key>
         <string>development</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>munkitools</string>
+        <string>Deployment/Munki</string>
         <!--  -->
         <key>MUNKITOOLS_CORE_NAME</key>
         <string>munkitools_core</string>
         <key>MUNKITOOLS_CORE_DISPLAYNAME</key>
-        <string>Managed Software Center core tools</string>
+        <string>Managed Software Center (core)</string>
         <key>MUNKITOOLS_CORE_DESCRIPTION</key>
         <string>Core command-line tools used by Managed Software Center.</string>
         <!--  -->
         <key>MUNKITOOLS_ADMIN_NAME</key>
         <string>munkitools_admin</string>
         <key>MUNKITOOLS_ADMIN_DISPLAYNAME</key>
-        <string>Managed Software Center admin tools</string>
+        <string>Managed Software Center (Admin)</string>
         <key>MUNKITOOLS_ADMIN_DESCRIPTION</key>
         <string>Command-line Managed Software Center admin tools.</string>
         <!--  -->
@@ -45,12 +41,12 @@ https://munkibuilds.org/2.2.2.2416/munkitools-2.2.2.2416.pkg</string>
         <key>MUNKITOOLS_LAUNCHD_NAME</key>
         <string>munkitools_launchd</string>
         <key>MUNKITOOLS_LAUNCHD_DISPLAYNAME</key>
-        <string>Managed Software Center launchd files</string>
+        <string>Managed Software Center (launchd)</string>
         <key>MUNKITOOLS_LAUNCHD_DESCRIPTION</key>
         <string>launchd configuration files for use by Managed Software Center.</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.4</string>
+    <string>0.6.1</string>
     <key>Process</key>
     <array>
         <dict>

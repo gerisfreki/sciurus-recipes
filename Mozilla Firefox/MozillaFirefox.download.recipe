@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Download recipe for Firefox. Finds and downloads a Firefox release.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.MozillaFirefox</string>
+    <string>lan.sciurus.autopkg.download.Mozilla.Firefox</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

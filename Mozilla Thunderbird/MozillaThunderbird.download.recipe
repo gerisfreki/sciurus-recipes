@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Thunderbird disk image.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.MozillaThunderbird</string>
+    <string>lan.sciurus.autopkg.download.Mozilla.Thunderbird</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Thunderbird disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.MozillaThunderbird</string><key>Input</key>
+    <string>lan.sciurus.autopkg.munki.Mozilla.Thunderbird</string><key>Input</key>
     <dict>
         <key>pkginfo</key>
         <dict>
@@ -30,7 +30,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.MozillaThunderbird</string>
+    <string>lan.sciurus.autopkg.download.Mozilla.Thunderbird</string>
     <key>Process</key>
     <array>
         <dict>

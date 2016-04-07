@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Firefox disk image and builds a package.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.pkg.MozillaFirefox</string>
+    <string>lan.sciurus.autopkg.pkg.Mozilla.Firefox</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.MozillaFirefox</string>
+    <string>lan.sciurus.autopkg.download.Mozilla.Firefox</string>
     <key>Process</key>
     <array>
         <dict>

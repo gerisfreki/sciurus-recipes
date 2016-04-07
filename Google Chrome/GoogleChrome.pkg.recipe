@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Downloads latest Google Chrome disk image and builds a package.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.pkg.GoogleChrome</string>
+    <string>lan.sciurus.autopkg.pkg.Google.Chrome</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>GoogleChrome</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.GoogleChrome</string>
+    <string>lan.sciurus.autopkg.download.Google.Chrome</string>
     <key>Process</key>
     <array>
         <dict>

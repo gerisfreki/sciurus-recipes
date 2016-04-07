@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Downloads Thunderbird disk image and builds a package.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.pkg.MozillaThunderbird</string>
+    <string>lan.sciurus.autopkg.pkg.Mozilla.Thunderbird</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>MozillaThunderbird</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.MozillaThunderbird</string>
+    <string>lan.sciurus.autopkg.download.Mozilla.Thunderbird</string>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>Process</key>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Google Chrome disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.GoogleChrome</string>
+    <string>lan.sciurus.autopkg.munki.Google.Chrome</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -33,7 +33,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.GoogleChrome</string>
+    <string>lan.sciurus.autopkg.download.Google.Chrome</string>
     <key>Process</key>
     <array>
         <dict>
