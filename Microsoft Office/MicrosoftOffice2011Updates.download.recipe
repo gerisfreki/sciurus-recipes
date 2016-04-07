@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Finds latest Office 2011 update and downloads the disk image.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.MicrosoftOffice2011Updates</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.2011.Updates</string>
     <key>Input</key>
     <dict>
     </dict>

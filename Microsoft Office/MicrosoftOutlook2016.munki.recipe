@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Excel 2016 multilingual update pkg, appends the version to the end of the filename, and imports into Munki.</string>
+    <string>Downloads the latest Outlook 2016 multilingual update pkg, appends the version to the end of the filename, and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.Microsoft.Office.Excel.2016</string>
+    <string>lan.sciurus.autopkg.munki.Microsoft.Office.Outlook.2016</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>
     <dict>
+        <key>NAME</key>
+        <string>MicrosoftOutlook2016</string>
         <key>munki_required_update_name</key>
         <string></string>
         <key>pkginfo</key>
         <dict>
             <key>blocking_applications</key>
             <array>
-                <string>Microsoft Excel</string>
+                <string>Microsoft Outlook</string>
                 <string>Microsoft Error Reporting</string>
                 <string>Microsoft Auto Update</string>
             </array>
@@ -25,13 +27,13 @@
                 <string>testing</string>
             </array>
             <key>name</key>
-            <string>MicrosoftExcel2016</string>
+            <string>%NAME%</string>
             <key>unattended_install</key>
             <true/>
         </dict>
     </dict>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.Office.Excel.2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.Outlook.2016</string>
     <key>Process</key>
     <array>
         <dict>
@@ -46,7 +48,7 @@
                 <key>pkg_path</key>
                 <string>%pathname%</string>
                 <key>repo_subdirectory</key>
-                <string>Office/Suites/Microsoft Office/2016/Excel</string>
+                <string>Office/Suites/Microsoft Office/2016/Outlook</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>

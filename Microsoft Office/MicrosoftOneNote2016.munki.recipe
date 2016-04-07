@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest OneNote 2016 multilingual update pkg, appends the version to the end of the filename, and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.Microsoft.OneNote2016</string>
+    <string>lan.sciurus.autopkg.munki.Microsoft.Office.OneNote.2016</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>
@@ -31,7 +31,7 @@
         </dict>
     </dict>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.OneNote2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.OneNote.2016</string>
     <key>Process</key>
     <array>
         <dict>

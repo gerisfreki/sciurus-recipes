@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Finds latest Office 2011 update, downloads the disk image and extracts the pkg.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.MicrosoftOffice2011Updates</string>
+    <string>lan.sciurus.autopkg.munki.Microsoft.Office.2011.Updates</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -57,7 +57,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.MicrosoftOffice2011Updates</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.2011.Updates</string>
     <key>Process</key>
     <array>
         <dict>

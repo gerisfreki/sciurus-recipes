@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Downloads and installs the latest Excel 2016 update.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.install.MicrosoftExcel2016</string>
+    <string>lan.sciurus.autopkg.install.Microsoft.Office.Excel.2016</string>
     <key>Input</key>
     <dict>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.MicrosoftExcel2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.Excel.2016</string>
     <key>Process</key>
     <array>
         <dict>
