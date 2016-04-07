@@ -29,7 +29,7 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.6.0</string>
     <key>ParentRecipe</key>
     <string>lan.sciurus.autopkg.download.AdobeFlashPlayer</string>
     <key>Process</key>

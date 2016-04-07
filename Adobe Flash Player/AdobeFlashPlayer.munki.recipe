@@ -8,12 +8,6 @@
     <string>lan.sciurus.autopkg.munki.AdobeFlashPlayer</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>AdobeFlashPlayer</string>
-        <key>product_directory</key>
-        <string>Plugins/Adobe Flash Player/</string>
-        <key>MAKEPKGINFO_PKGNAME</key>
-        <string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -25,13 +19,17 @@
             <key>display_name</key>
             <string>Adobe Flash Player</string>
             <key>name</key>
-            <string>%NAME%</string>
+            <string>AdobeFlashPlayer</string>
+            <key>category</key>
+            <string>Plugins</string>
+            <key>developer</key>
+            <string>Adobe Ltd.</string>
             <key>unattended_install</key>
             <true/>
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.6.0</string>
     <key>ParentRecipe</key>
     <string>lan.sciurus.autopkg.download.AdobeFlashPlayer</string>
     <key>Process</key>
@@ -42,9 +40,9 @@
                 <key>pkg_path</key>
                 <string>%pathname%</string>
                 <key>repo_subdirectory</key>
-                <string>%product_directory%</string>
+                <string>Plugins/Adobe Flash Player</string>
                 <key>munkiimport_pkgname</key>
-                <string>%MAKEPKGINFO_PKGNAME%</string>
+                <string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
