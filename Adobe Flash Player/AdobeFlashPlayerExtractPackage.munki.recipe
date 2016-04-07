@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Adobe Flash Player installer, extracts the embedded package, imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.FlashPlayerExtractPackage</string>
+    <string>lan.sciurus.autopkg.munki.AdobeFlashPlayer.Extracted</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.FlashPlayer</string>
+    <string>lan.sciurus.autopkg.download.AdobeFlashPlayer</string>
     <key>Process</key>
     <array>
         <dict>
