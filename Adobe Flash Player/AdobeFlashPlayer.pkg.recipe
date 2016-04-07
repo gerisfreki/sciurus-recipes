@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Adobe Flash Player installer and extracts the embedded package. No repackaging done.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.pkg.AdobeFlashPlayer</string>
+    <string>lan.sciurus.autopkg.Adobe.FlashPlayer.pkg</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.AdobeFlashPlayer</string>
+    <string>lan.sciurus.autopkg.Adobe.FlashPlayer.download</string>
     <key>Process</key>
     <array>
         <dict>
