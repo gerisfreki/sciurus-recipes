@@ -10,7 +10,7 @@
     <dict>
         <key>NAME</key>
         <string>AdobeFlashPlayer</string>
-        <key>MUNKI_REPO_SUBDIR</key>
+        <key>product_directory</key>
         <string>Plugins/Adobe Flash Player/</string>
         <key>MAKEPKGINFO_PKGNAME</key>
         <string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
@@ -42,7 +42,7 @@
                 <key>pkg_path</key>
                 <string>%pathname%</string>
                 <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
+                <string>%product_directory%</string>
                 <key>munkiimport_pkgname</key>
                 <string>%MAKEPKGINFO_PKGNAME%</string>
             </dict>
