@@ -8,6 +8,10 @@
     <string>lan.sciurus.autopkg.download.Microsoft.Office.2011.Updates</string>
     <key>Input</key>
     <dict>
+        <key>CULTURE_CODE</key>
+        <string>0407</string>
+        <key>VERSION</key>
+        <string>latest</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
@@ -19,11 +23,11 @@
             <key>Arguments</key>
             <dict>
                 <key>culture_code</key>
-                <string>0407</string>
+                <string>%CULTURE_CODE%</string>
                 <key>munki_update_name</key>
                 <string>Office2011_update</string>
                 <key>version</key>
-                <string>latest</string>
+                <string>%VERSION%</string>
             </dict>
         </dict>
         <dict>
