@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads and installs latest Skype client.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.install.MicrosoftSkype</string>
+    <string>lan.sciurus.autopkg.install.Microsoft.Skype</string>
     <key>Input</key>
     <dict>
         <key>DOWNLOAD_URL</key>
@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.MicrosoftSkype</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Skype</string>
     <key>Process</key>
     <array>
         <dict>
