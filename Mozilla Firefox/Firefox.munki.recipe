@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus..autopkg.download.MozillaFirefox</string>
+    <string>lan.sciurus.autopkg.download.MozillaFirefox</string>
     <key>Process</key>
     <array>
         <dict>
