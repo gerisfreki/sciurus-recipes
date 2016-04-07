@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Lädt das Installer für Adobe Flash Player herunter.</string>
+    <string>Downloads Adobe Flash Player installer.</string>
     <key>Identifier</key>
     <string>lan.sciurus.autopkg.download.AdobeFlashPlayer</string>
     <key>Input</key>
