@@ -21,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>product_name</key>
-                <string>MozillaThunderbird</string>
+                <string>thunderbird</string>
                 <key>release</key>
                 <string>latest</string>
                 <key>locale</key>
