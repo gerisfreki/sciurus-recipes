@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads and installs the current release version of Sublime Text 3.</string>
 	<key>Identifier</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.install</string>
+	<string>lan.sciurus.autopkg.recipes.SublimeText.SublimeText3.install</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>0.5.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.download</string>
+	<string>lan.sciurus.autopkg.recipes.SublimeText.SublimeText3.download</string>
 	<key>Process</key>
 	<array>
 		<dict>

@@ -5,16 +5,16 @@
 	<key>Description</key>
 	<string>Downloads the latest OpenOffice version and creates a package.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.pkg.OpenOffice</string>
+	<string>lan.sciurus.autopkg.pkg.Apache.OpenOffice</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>OpenOffice</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.9</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.OpenOffice</string>
+	<string>lan.sciurus.autopkg.download.Apache.OpenOffice</string>
 	<key>Process</key>
 	<array>
 		<dict>

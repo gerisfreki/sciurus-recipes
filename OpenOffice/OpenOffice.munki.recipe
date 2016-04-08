@@ -5,13 +5,13 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Apache OpenOffice and imports into Munki.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.munki.OpenOffice</string>
+	<string>lan.sciurus.autopkg.munki.Apache.OpenOffice</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>OpenOffice</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/OpenOffice</string>
+		<string>Office/Suites/Apache OpenOffice</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>Office</string>
 		<key>pkginfo</key>
@@ -37,9 +37,9 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.OpenOffice</string>
+	<string>lan.sciurus.autopkg.download.Apache.OpenOffice</string>
 	<key>Process</key>
 	<array>
 		<dict>

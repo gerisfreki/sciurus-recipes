@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Sublime Text 3.</string>
 	<key>Identifier</key>
-	<string>com.github.keeleysam.recipes.SublimeText.SublimeText3.download</string>
+	<string>lan.sciurus.autopkg.recipes.SublimeText.SublimeText3.download</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

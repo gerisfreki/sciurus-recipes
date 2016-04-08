@@ -5,11 +5,11 @@
 	<key>Description</key>
 	<string>Downloads the latest Opera disk image and imports into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.keeleysam.recipes.Opera.munki</string>
+	<string>lan.sciurus.autopkg.munki.Opera</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/Opera</string>
+		<string>Office/Browser/Opera</string>
 		<key>NAME</key>
 		<string>Opera</string>
 		<key>pkginfo</key>
@@ -24,14 +24,18 @@
 			<string>Opera</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>developer</key>
+			<string>Opera</string>
+			<key>category</key>
+			<string>Browser</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.keeleysam.recipes.Opera.download</string>
+	<string>lan.sciurus.autopkg.download.Opera</string>
 	<key>Process</key>
 	<array>
 		<dict>

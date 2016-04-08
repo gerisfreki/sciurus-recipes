@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current version of iTerm2. Set RELEASE to either "final" or "testing". For iTerm2 version 3 beta, set RELEASE to "testing3".</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.download.iTerm2</string>
+	<string>lan.sciurus.autopkg.download.iTerm2</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 		<string>final</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
+	<string>0.6.1</string>
 	<key>Process</key>
 	<array>
 		<dict>
