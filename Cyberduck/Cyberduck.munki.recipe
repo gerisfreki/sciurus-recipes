@@ -20,6 +20,10 @@
             <string>Mit einer benutzerfreundlichen Oberfläche verbindet man sich im Handumdrehen zu FTP, SFTP, WebDAV, Amazon S3, Google Storage, Windows Azure, Rackspace Cloud und sogar Google Docs.</string>
             <key>display_name</key>
             <string>Cyberduck</string>
+            <key>developer</key>
+            <string>iterate GmbH</string>
+            <key>category</key>
+            <string>Tools</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>

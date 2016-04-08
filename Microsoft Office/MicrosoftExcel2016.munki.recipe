@@ -26,6 +26,10 @@
             </array>
             <key>name</key>
             <string>MicrosoftExcel2016</string>
+            <key>developer</key>
+            <string>Microsoft Inc.</string>
+            <key>category</key>
+            <string>Office</string>
             <key>unattended_install</key>
             <true/>
         </dict>

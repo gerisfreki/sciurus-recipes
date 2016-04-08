@@ -22,6 +22,10 @@
             <string>Java SE Runtime Environment 7 enables support for running Java-powered applets and applications.</string>
             <key>display_name</key>
             <string>Oracle Java 7</string>
+            <key>developer</key>
+            <string>Oracle</string>
+            <key>category</key>
+            <string>Plugins</string>
             <key>minimum_os_version</key>
             <string>10.11.3</string>
             <key>name</key>

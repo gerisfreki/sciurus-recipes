@@ -26,6 +26,10 @@
             <string>TextMate 2</string>
             <key>name</key>
             <string>%NAME%</string>
+            <key>developer</key>
+            <string>Macromates Ltd.</string>
+            <key>category</key>
+            <string>Editor</string>
             <key>postinstall_script</key>
             <string>#!/bin/sh
 [ -d /usr/local/bin ] || mkdir -p /usr/local/bin

@@ -184,7 +184,7 @@
                     <key>display_name</key>
                     <string>%MUNKITOOLS_CORE_DISPLAYNAME%</string>
                     <key>minimum_os_version</key>
-                    <string>10.6.0</string>
+                    <string>10.11.3</string>
                     <key>name</key>
                     <string>%MUNKITOOLS_CORE_NAME%</string>
                     <key>requires</key>
