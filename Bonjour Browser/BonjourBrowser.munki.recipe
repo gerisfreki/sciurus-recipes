@@ -5,13 +5,13 @@
     <key>Description</key>
     <string>Downloads the latest Bonjour Browser disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.jleggat.BonjourBrowser.munki</string>
+    <string>lan.sciurus.autopkg.munki.BonjourBrowser</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>BonjourBrowser</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps</string>
+        <string>Tools/Networking/%NAME%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -27,15 +27,15 @@
             <key>unattended_install</key>
             <true/>
 			<key>category</key>
-			<string>Network Utilities</string>
+			<string>Tools</string>
 			<key>developer</key>
 			<string>Tildesoft</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.jleggat.BonjourBrowser.download</string>
+    <string>lan.sciurus.autopkg.download.BonjourBrowser</string>
     <key>Process</key>
     <array>
         <dict>

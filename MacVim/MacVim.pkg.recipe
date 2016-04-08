@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of MacVim where MAJOR_OS_VERSION is Snow-Leopard, Mountain-Lion or Mavericks (default).</string>
 	<key>Identifier</key>
-	<string>com.github.jleggat.MacVim.pkg</string>
+	<string>lan.sciurus.autopkg.pkg.MacVim</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -14,9 +14,9 @@
         <string>org.vim.MacVim</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.0</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.jleggat.MacVim.download</string>
+    <string>lan.sciurus.autopkg.download.MacVim</string>
     <key>Process</key>
     <array>
         <dict>

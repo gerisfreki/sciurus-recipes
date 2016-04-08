@@ -5,16 +5,16 @@
     <key>Description</key>
     <string>Downloads the latest Bonjour Browser disk image and installs it.</string>
     <key>Identifier</key>
-    <string>com.github.jleggat.BonjourBrowser.install</string>
+    <string>lan.sciurus.autopkg.install.BonjourBrowser</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>BonjourBrowser</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.4.0</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.jleggat.BonjourBrowser.download</string>
+    <string>lan.sciurus.autopkg.download.BonjourBrowser</string>
     <key>Process</key>
     <array>
         <dict>
