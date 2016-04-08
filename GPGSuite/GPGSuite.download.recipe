@@ -5,14 +5,14 @@
         <key>Description</key>
         <string>Download recipe for GPGSuite.</string>
         <key>Identifier</key>
-        <string>com.github.gerardkok.download.GPGSuite</string>
+        <string>lan.sciurus.autopkg.download.GPGSuite</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
             <string>GPGSuite</string>
         </dict>
         <key>MinimumVersion</key>
-        <string>0.3.1</string>
+        <string>0.6.1</string>
         <key>Process</key>
         <array>
             <dict>

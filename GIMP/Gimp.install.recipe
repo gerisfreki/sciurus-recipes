@@ -5,16 +5,16 @@
 	<key>Description</key>
 	<string>Installs the latest version of GIMP from gimp.org.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.install.GIMP</string>
+	<string>lan.sciurus.autopkg.install.GIMP</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>GIMP</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.5.2</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.pkg.GIMP</string>
+	<string>lan.sciurus.autopkg.pkg.GIMP</string>
 	<key>Process</key>
 	<array>
 		<dict>

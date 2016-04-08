@@ -5,13 +5,13 @@
         <key>Description</key>
         <string>Downloads GPGSuite and imports into Munki.</string>
         <key>Identifier</key>
-        <string>com.github.gerardkok.munki.GPGSuite</string>
+        <string>lan.sciurus.autopkg.munki.GPGSuite</string>
         <key>Input</key>
         <dict>
             <key>MUNKI_REPO_SUBDIR</key>
-            <string>apps</string>
+            <string>Tools/Sicherheit/GPGSuite</string>
             <key>MUNKI_CATEGORY</key>
-            <string>Utilities</string>
+            <string>Sicherheit</string>
             <key>NAME</key>
             <string>GPGSuite</string>
             <key>pkginfo</key>
@@ -31,7 +31,7 @@
                 <key>name</key>
                 <string>%NAME%</string>
                 <key>minimum_os_version</key>
-                <string>10.6.0</string>
+                <string>10.11.3</string>
                 <key>blocking_applications</key>
                 <array>
                     <string>Mail</string>
@@ -45,9 +45,9 @@
             </dict>
         </dict>
         <key>MinimumVersion</key>
-        <string>0.2.0</string>
+        <string>0.6.1</string>
         <key>ParentRecipe</key>
-        <string>com.github.gerardkok.verify.GPGSuite</string>
+        <string>lan.sciurus.autopkg.verify.GPGSuite</string>
         <key>Process</key>
         <array>
             <dict>

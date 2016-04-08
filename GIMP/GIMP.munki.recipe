@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of GIMP from gimp.org and imports into Munki.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.munki.GIMP</string>
+	<string>lan.sciurus.autopkg.munki.GIMP</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -35,6 +35,8 @@
 			<string>GIMP</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>category</key>
+			<string>Bearbeitung</string>
 			<key>unattended_install</key>
 			<true/>
 			<key>unattended_uninstall</key>
@@ -42,9 +44,9 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.5.2</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.GIMP</string>
+	<string>lan.sciurus.autopkg.download.GIMP</string>
 	<key>Process</key>
 	<array>
 		<dict>

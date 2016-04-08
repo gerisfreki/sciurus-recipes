@@ -5,7 +5,7 @@
         <key>Description</key>
         <string>Verify recipe for GPGSuite.</string>
         <key>Identifier</key>
-        <string>com.github.gerardkok.verify.GPGSuite</string>
+        <string>lan.sciurus.autopkg.verify.GPGSuite</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
@@ -14,9 +14,9 @@
             <string>00D026C4</string>
         </dict>
         <key>MinimumVersion</key>
-        <string>0.4.0</string>
+        <string>0.6.1</string>
         <key>ParentRecipe</key>
-        <string>com.github.gerardkok.download.GPGSuite</string>
+        <string>lan.sciurus.autopkg.download.GPGSuite</string>
         <key>Process</key>
         <array>
             <dict>
@@ -32,7 +32,7 @@
             </dict>
             <dict>
                 <key>Processor</key>
-                <string>com.github.autopkg.gerardkok-recipes.SharedProcessors/GPGSignatureVerifier</string>
+                <string>lan.sciurus.autopkg.SharedProcessors.GPGSuite</string>
                 <key>Arguments</key>
                 <dict>
                     <key>public_key_id</key>
