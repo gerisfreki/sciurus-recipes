@@ -17,11 +17,11 @@ The package's receipt version is useless, so we make an installs item for
 the prefPane bundle, which has historically had consistent versioning.
 </string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.OracleJava8</string>
+    <string>lan.sciurus.autopkg.munki.Oracle.Java8</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>plugins/Java</string>
+        <string>Plugins/Orcale/Java 8</string>
         <key>NAME</key>
         <string>OracleJava8</string>
         <key>pkginfo</key>
@@ -33,9 +33,13 @@ the prefPane bundle, which has historically had consistent versioning.
             <key>description</key>
             <string>Java SE Runtime Environment 8 enables support for running Java-powered applets and applications.</string>
             <key>display_name</key>
-            <string>Oracle Java 8</string>
+            <string>Java 8</string>
+            <key>developer</key>
+            <string>Oracle</string>
+            <key>category</key>
+            <string>Plugins</string>
             <key>minimum_os_version</key>
-            <string>10.7.3</string>
+            <string>10.11.3</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -53,9 +57,9 @@ the prefPane bundle, which has historically had consistent versioning.
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.9</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.OracleJava8</string>
+    <string>lan.sciurus.autopkg.download.Oracle.Java8</string>
     <key>Process</key>
     <array>
         <dict>
