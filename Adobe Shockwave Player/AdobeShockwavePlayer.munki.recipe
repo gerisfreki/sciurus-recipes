@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>AdobeShockwavePlayer</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>Plugins/Adobe/Shockwave Player</string>
+        <string>Plugins/Adobe Shockwave Player</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>

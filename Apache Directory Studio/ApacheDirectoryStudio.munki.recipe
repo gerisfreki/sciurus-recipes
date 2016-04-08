@@ -2,16 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with help from Recipe Robot v0.0.4 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of ApacheDirectoryStudio and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.homebysix.munki.ApacheDirectoryStudio</string>
+	<string>lan.sciurus.autopkg.munki.Apache.DirectoryStudio</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/%NAME%</string>
+		<string>Tools/Network/%NAME%</string>
 		<key>NAME</key>
 		<string>ApacheDirectoryStudio</string>
 		<key>pkginfo</key>
@@ -23,7 +21,9 @@
 			<key>description</key>
 			<string>Complete LDAP tooling platform.</string>
 			<key>developer</key>
-			<string></string>
+			<string>Apache</string>
+			<key>category</key>
+			<string>Tools</string>
 			<key>display_name</key>
 			<string>ApacheDirectoryStudio</string>
 			<key>name</key>
@@ -33,9 +33,9 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.5.0</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.homebysix.pkg.ApacheDirectoryStudio</string>
+	<string>lan.sciurus.autopkg.pkg.Apache.DirectoryStudio</string>
 	<key>Process</key>
 	<array>
 		<dict>

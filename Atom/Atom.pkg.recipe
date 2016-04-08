@@ -5,16 +5,16 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Atom and makes a package.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.pkg.Atom</string>
+	<string>lan.sciurus.autopkg.pkg.Atom</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>Atom</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.3.1</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.Atom</string>
+	<string>lan.sciurus.autopkg.download.Atom</string>
 	<key>Process</key>
 	<array>
 		<dict>
