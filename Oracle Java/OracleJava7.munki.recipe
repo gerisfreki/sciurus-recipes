@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Oracle Java 7 JRE and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.OracleJava7</string>
+    <string>lan.sciurus.autopkg.munki.Oracle.Java7</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
