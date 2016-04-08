@@ -32,7 +32,7 @@
             </dict>
             <dict>
                 <key>Processor</key>
-                <string>lan.sciurus.autopkg.SharedProcessors.GPGSuite</string>
+                <string>GPGSignatureVerifier</string>
                 <key>Arguments</key>
                 <dict>
                     <key>public_key_id</key>
