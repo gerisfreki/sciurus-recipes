@@ -54,9 +54,9 @@
 							<key>group</key>
 							<string>admin</string>
 							<key>path</key>
-							<string>%RECIPE_CACHE_DIR%/%NAME%/Applications</string>
+							<string>Applications</string>
 							<key>user</key>
-							<string>root</string>
+							<string>administrator</string>
 						</dict>
 					</array>
 					<key>id</key>
