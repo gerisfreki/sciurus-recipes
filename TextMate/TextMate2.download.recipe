@@ -3,14 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest TextMate 2.
-
-BRANCH can be one of 'release' or 'beta', which correspond respectively
-to the 'Normal' and 'Nightly' options in TextMate 2's Software Update
-preferences panel.
-</string>
+    <string>Downloads the latest TextMate 2.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.download.TextMate2</string>
+    <string>lan.sciurus.autopkg.download.TextMate2</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -19,7 +14,7 @@ preferences panel.
         <string>release</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.4.0</string>
+    <string>0.6.1</string>
     <key>Process</key>
     <array>
         <dict>

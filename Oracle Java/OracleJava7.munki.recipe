@@ -3,20 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Oracle Java 7 JRE and imports into Munki.
-
-To use this recipe, you must accept the Oracle Binary Code License Agreement for Java SE.
-http://www.oracle.com/technetwork/java/javase/terms/license/index.html
-
-The package's receipt version is useless, so we make an installs item for
-the prefPane bundle, which has historically had consistent versioning.
-</string>
+    <string>Downloads the latest Oracle Java 7 JRE and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.autopkg.munki.OracleJava7</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>plugins/Java</string>
+        <string>Plugins/Oracle/Java</string>
         <key>NAME</key>
         <string>OracleJava7</string>
         <key>pkginfo</key>
@@ -30,7 +23,7 @@ the prefPane bundle, which has historically had consistent versioning.
             <key>display_name</key>
             <string>Oracle Java 7</string>
             <key>minimum_os_version</key>
-            <string>10.7.3</string>
+            <string>10.11.3</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -48,9 +41,9 @@ the prefPane bundle, which has historically had consistent versioning.
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.9</string>
+    <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.OracleJava7</string>
+    <string>lan.sciurus.autopkg.download.Oracle.Java7</string>
     <key>Process</key>
     <array>
         <dict>
