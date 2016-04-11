@@ -5,16 +5,16 @@
 	<key>Description</key>
 	<string>Downloads the current release version of LibreOffice and builds a package.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.pkg.LibreOffice</string>
+	<string>lan.sciurus.autopkg.pkg.LibreOffice</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>LibreOffice</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.LibreOffice</string>
+	<string>lan.sciurus.autopkg.download.LibreOffice</string>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
+	<string>0.6.1</string>
 	<key>Process</key>
 	<array>
 		<dict>

@@ -5,13 +5,13 @@
 	<key>Description</key>
 	<string>Downloads the current release version of LibreOffice and imports into Munki.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.munki.LibreOffice</string>
+	<string>lan.sciurus.autopkg.munki.LibreOffice</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>LibreOffice</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/LibreOffice</string>
+		<string>Office/Suites/LibreOffice</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>Office</string>
 		<key>pkginfo</key>
@@ -37,9 +37,9 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.0</string>
+	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.LibreOffice</string>
+	<string>lan.sciurus.autopkg.download.LibreOffice</string>
 	<key>Process</key>
 	<array>
 		<dict>
