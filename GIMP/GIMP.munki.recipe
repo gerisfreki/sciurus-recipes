@@ -11,7 +11,7 @@
 		<key>NAME</key>
 		<string>GIMP</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/GIMP</string>
+		<string>Tools/Editor/GIMP</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>Image Manipulation</string>
 		<key>pkginfo</key>
