@@ -2,12 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with help from Recipe Robot v0.0.4 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of Vienna.</string>
 	<key>Identifier</key>
-	<string>com.github.homebysix.download.Vienna</string>
+	<string>lan.sciurus.autopkg.download.Vienna</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +14,7 @@
 		<string>https://viennarss.github.io/sparkle-files/changelog.xml</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.6.0</string>
+	<string>0.6.1</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -30,7 +28,7 @@
 		</dict>
 		<dict>
 			<key>Processor</key>
-			<string>com.github.homebysix.VersionSplitter/VersionSplitter</string>
+			<string>lan.sciurus.autopkg.VersionSplitter/VersionSplitter</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>

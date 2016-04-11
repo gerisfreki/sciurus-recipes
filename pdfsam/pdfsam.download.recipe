@@ -1,17 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>Description</key>
 	<string>Downloads the latest version of PDFsam</string>
 	<key>Identifier</key>
-	<string>com.github.andrewvalentine.download.pdfsam</string>
+	<string>lan.sciurus.autopkg.download.pdfsam</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>PDFsam</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.2.9</string>
+	<string>0.6.1</string>
 	<key>Process</key>
 	<array>
 		<dict>
