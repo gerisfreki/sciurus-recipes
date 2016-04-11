@@ -28,7 +28,7 @@
 		</dict>
 		<dict>
 			<key>Processor</key>
-			<string>lan.sciurus.autopkg.VersionSplitter</string>
+			<string>lan.sciurus.autopkg.VersionSplitter/VersionSplitter</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
