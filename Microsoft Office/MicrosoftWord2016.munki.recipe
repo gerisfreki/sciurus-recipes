@@ -30,6 +30,10 @@
             </array>
             <key>name</key>
             <string>%NAME%</string>
+            <key>category</key>
+            <string>Office-Update</string>
+            <key>developer</key>
+            <string>Microsoft Inc.</string>
             <key>unattended_install</key>
             <true/>
         </dict>

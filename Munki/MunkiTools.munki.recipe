@@ -44,6 +44,10 @@
         <string>Managed Software Center (launchd)</string>
         <key>MUNKITOOLS_LAUNCHD_DESCRIPTION</key>
         <string>launchd configuration files for use by Managed Software Center.</string>
+
+        <!-- -->
+        <key>MUNKITOOLS_DEVELOPER</key>
+        <string>MunkiTools</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
@@ -187,6 +191,8 @@
                     <string>10.11.3</string>
                     <key>name</key>
                     <string>%MUNKITOOLS_CORE_NAME%</string>
+                    <key>developer</key>
+        			<string>%MUNKITOOLS_DEVELOPER%</string>
                     <key>requires</key>
                     <array>
                         <string>%MUNKITOOLS_LAUNCHD_NAME%</string>
@@ -221,6 +227,8 @@
                     <string>%MUNKITOOLS_ADMIN_NAME%</string>
                     <key>unattended_install</key>
                     <true/>
+                    <key>developer</key>
+        			<string>%MUNKITOOLS_DEVELOPER%</string>
                     <key>update_for</key>
                     <array>
                         <string>%MUNKITOOLS_CORE_NAME%</string>
@@ -251,6 +259,8 @@
                     <string>10.6.0</string>
                     <key>name</key>
                     <string>%MUNKITOOLS_APP_NAME%</string>
+                    <key>developer</key>
+        			<string>%MUNKITOOLS_DEVELOPER%</string>
                     <key>requires</key>
                     <array>
                         <string>%MUNKITOOLS_CORE_NAME%</string>
@@ -284,6 +294,8 @@
                     <string>10.6.0</string>
                     <key>name</key>
                     <string>%MUNKITOOLS_LAUNCHD_NAME%</string>
+                    <key>developer</key>
+        			<string>%MUNKITOOLS_DEVELOPER%</string>
                 </dict>
             </dict>
         </dict>
