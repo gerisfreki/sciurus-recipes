@@ -31,7 +31,7 @@ the prefPane bundle, which has historically had consistent versioning.
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Java SE Runtime Environment 8 enables support for running Java-powered applets and applications.</string>
+            <string>Java erlaubt die Ausführung zahlreicher Programme und ist die am weitesten verbreiteste Software der Welt.</string>
             <key>display_name</key>
             <string>Java 8</string>
             <key>developer</key>
