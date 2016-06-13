@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Word 2016 multilingual update pkg, and appends the version to the end of the filename.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.Office.Word.2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.2016.Word</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>

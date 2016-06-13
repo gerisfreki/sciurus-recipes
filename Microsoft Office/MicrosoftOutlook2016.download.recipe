@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Outlook 2016 multilingual update pkg, and appends the version to the end of the filename.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.Office.Outlook.2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.2016.Outlook</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>

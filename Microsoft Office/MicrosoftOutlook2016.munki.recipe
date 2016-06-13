@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Outlook 2016 multilingual update pkg, appends the version to the end of the filename, and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.Microsoft.Office.Outlook.2016</string>
+    <string>lan.sciurus.autopkg.munki.Microsoft.Office.2016.Outlook</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>
@@ -26,6 +26,8 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>display_name</key>
+            <string>Microsoft Office 2016 - Outlook</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>developer</key>
@@ -37,7 +39,7 @@
         </dict>
     </dict>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.Office.Outlook.2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.2016.Outlook</string>
     <key>Process</key>
     <array>
         <dict>

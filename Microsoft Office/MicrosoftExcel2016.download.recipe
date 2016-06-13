@@ -5,13 +5,13 @@
     <key>Description</key>
     <string>Downloads the latest Excel 2016 multilingual update pkg, and appends the version to the end of the filename.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.Office.Excel.2016</string>
+    <string>lan.sciurus.autopkg.download.Microsoft.Office.2016.Excel</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>MicrosoftExcel2016</string>
+        <string>MicrosoftOffice2016Excel</string>
     </dict>
     <key>Process</key>
     <array>
