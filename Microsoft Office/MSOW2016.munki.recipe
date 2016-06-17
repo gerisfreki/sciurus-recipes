@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Excel 2016 multilingual update pkg, appends the version to the end of the filename, and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>lan.sciurus.autopkg.munki.Microsoft.Office.Word.2016</string>
+    <key>MinimumVersion</key>
+    <string>0.6.1</string>
+    <key>Input</key>
+</dict>
