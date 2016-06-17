@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Word 2016 multilingual update pkg, appends the version to the end of the filename, and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.Microsoft.Office.2016.Word</string>
+    <string>lan.sciurus.autopkg.munki.Microsoft.Office.Word.2016</string>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>Input</key>
