@@ -39,7 +39,7 @@ PROD_DICT = {
     'Word':'MSWD',
 }
 LOCALE_ID_INFO_URL = "https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
-SUPPORTED_VERSIONS = ["latest", "latest-delta"]
+SUPPORTED_VERSIONS = ["latest", "latest"]
 DEFAULT_VERSION = "latest"
 
 class MSOffice2016URLandUpdateInfoProvider(Processor):
@@ -208,7 +208,7 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
         # which item has that key.
         if self.env["version"] == "latest":
             item = [u for u in metadata if not u.get("FullUpdaterLocation")]
-        elif self.env["version"] == "latest-delta":
+        elif self.env["version"] == "latest":
             item = [u for u in metadata if u.get("FullUpdaterLocation")]
         if not item:
             raise ProcessorError("Could not find an applicable update in "
@@ -248,7 +248,7 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
             pkginfo["installs"] = installs_items
 
         # Extra work to do if this is a delta updater
-        if self.env["version"] == "latest-delta":
+        if self.env["version"] == "latest":
             try:
                 rel_versions = item["Triggers"]["Registered File"]["VersionsRelative"]
             except KeyError:
