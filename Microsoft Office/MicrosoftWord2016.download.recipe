@@ -15,7 +15,7 @@
         <key>NAME</key>
         <string>MicrosoftWord2016</string>
         <key>VERSION</key>
-        <string>latest</string>
+        <string>latest-delta</string>
     </dict>
     <key>Process</key>
     <array>
