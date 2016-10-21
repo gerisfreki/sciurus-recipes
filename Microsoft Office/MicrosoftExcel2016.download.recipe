@@ -10,22 +10,30 @@
     <string>0.6.1</string>
     <key>Input</key>
     <dict>
+        <key>CHANNEL</key>
+        <string>Production</string>
+        <key>LOCALE_ID</key>
+        <string>1031</string>
         <key>NAME</key>
-        <string>MicrosoftOffice2016Excel</string>
+        <string>MSExcel2016</string>
+        <key>VERSION</key>
+        <string>latest</string>
     </dict>
     <key>Process</key>
     <array>
         <dict>
-            <key>Processor</key>
-            <string>MSOffice2016URLandUpdateInfoProvider</string>
-            <key>Arguments</key>
+          <key>Processor</key>
+          <string>MSOffice2016URLandUpdateInfoProvider</string>
+          <key>Arguments</key>
             <dict>
-                <key>locale_id</key>
-                <string>1031</string>
-                <key>product</key>
-                <string>Excel</string>
-                <key>version</key>
-                <string>latest</string>
+              <key>channel</key>
+              <string>%CHANNEL%</string>
+              <key>locale_id</key>
+              <string>%LOCALE_ID%</string>
+              <key>product</key>
+              <string>Excel</string>
+              <key>version</key>
+              <string>%VERSION%</string>
             </dict>
         </dict>
         <dict>
