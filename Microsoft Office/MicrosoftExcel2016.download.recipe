@@ -12,6 +12,8 @@
     <dict>
         <key>CHANNEL</key>
         <string>InsiderFast</string>
+        <key>minimum_version_for_delta</key>
+        <string>15.24.16070900</string>
         <key>LOCALE_ID</key>
         <string>1031</string>
         <key>NAME</key>
