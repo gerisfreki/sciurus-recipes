@@ -11,7 +11,7 @@
     <key>Input</key>
     <dict>
         <key>CHANNEL</key>
-        <string>Production</string>
+        <string>InsiderFast</string>
         <key>LOCALE_ID</key>
         <string>1031</string>
         <key>NAME</key>
