@@ -35,7 +35,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>lan.sciurus.autopkg.pkg.Apache.DirectoryStudio</string>
+	<string>lan.sciurus.autopkg.download.Apache.DirectoryStudio</string>
 	<key>Process</key>
 	<array>
 		<dict>
