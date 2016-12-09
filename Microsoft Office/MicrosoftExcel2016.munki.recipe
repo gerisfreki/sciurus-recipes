@@ -10,8 +10,6 @@
     <string>0.6.1</string>
     <key>Input</key>
     <dict>
-        <key>munki_required_update_name</key>
-        <string></string>
         <key>pkginfo</key>
         <dict>
             <key>blocking_applications</key>

@@ -3,27 +3,27 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Microsoft AutoUpdate update pkg,
-            and appends the version to the end of the filename.
+    <string>Downloads the latest Excel 2016 multilingual update pkg,
+and appends the version to the end of the filename.
 
-            CHANNEL can be set to several values in order to get more frequent updates
-            that can be used for testing purposes. See the explanations in the 'Channel'
-            table at http://macadmins.software/docs/MAU_ManifestServer.pdf. Supported
-            values are 'Production', 'InsiderSlow', 'InsiderFast', or a custom UUID to be
-            inserted into the Base URL.
+CHANNEL can be set to several values in order to get more frequent updates
+that can be used for testing purposes. See the explanations in the 'Channel'
+table at http://macadmins.software/docs/MAU_ManifestServer.pdf. Supported
+values are 'Production', 'InsiderSlow', 'InsiderFast', or a custom UUID to be
+inserted into the Base URL.
 
-            LOCALE_ID sets the locale for a descriptive text that will be
-            extracted from the Microsoft update metadata. See
-            https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx
-            for more information about locale IDs.
+LOCALE_ID sets the locale for a descriptive text that will be
+extracted from the Microsoft update metadata. See
+https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx
+for more information about locale IDs.
 
-            VERSION currently only supports one value: 'latest', which will download
-            the latest full update for the given CHANNEL.
-    </string>
-    <key>Identifier</key>
-    <string>lan.sciurus.autopkg.download.Microsoft.Office.2016.Excel</string>
+VERSION currently only supports one value: 'latest', which will download
+the latest full update for the given CHANNEL.
+</string>
+<key>Identifier</key>
+<string>lan.sciurus.autopkg.download.Microsoft.Office.2016.Excel</string>
     <key>MinimumVersion</key>
-    <string>0.6.1</string>
+    <string>0.4.2</string>
     <key>Input</key>
     <dict>
         <key>CHANNEL</key>
@@ -31,7 +31,7 @@
         <key>LOCALE_ID</key>
         <string>1031</string>
         <key>NAME</key>
-        <string>MicrosoftExcel2016</string>
+        <string>MSExcel2016</string>
         <key>VERSION</key>
         <string>latest</string>
     </dict>
