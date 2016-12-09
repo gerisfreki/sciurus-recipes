@@ -50,7 +50,7 @@ PROD_DICT = {
     }
 }
 LOCALE_ID_INFO_URL = "https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
-SUPPORTED_VERSIONS = ["latest", "latest-delta"]
+SUPPORTED_VERSIONS = ["latest"]
 DEFAULT_VERSION = "latest"
 CHANNELS = {
     'Production': 'C1297A47-86C4-4C1F-97FA-950631F94777',
@@ -64,7 +64,7 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
     input_variables = {
         "locale_id": {
             "required": False,
-            "default": "1033",
+            "default": "1031",
             "description": (
                 "Locale ID that determines the language "
                 "that is retrieved from the metadata, currently only "
@@ -135,7 +135,7 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
         },
     }
     description = __doc__
-    min_delta_version = ""
+#    min_delta_version = ""
 
     def sanity_check_expected_triggers(self, item):
         """Raises an exeception if the Trigger Condition or
