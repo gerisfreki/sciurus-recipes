@@ -300,4 +300,4 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
 
 if __name__ == "__main__":
     PROCESSOR = MSOffice2016URLandUpdateInfoProvider()
-PROCESSOR.execute_shell()
+    PROCESSOR.execute_shell()
