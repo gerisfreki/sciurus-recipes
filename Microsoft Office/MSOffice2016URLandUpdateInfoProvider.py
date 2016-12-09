@@ -30,17 +30,34 @@ __all__ = ["MSOffice2016URLandUpdateInfoProvider"]
 # CULTURE_CODE defaulting to 'en-US' as the installers and updates seem to be
 # multilingual.
 CULTURE_CODE = "0409"
-BASE_URL = "http://www.microsoft.com/mac/autoupdate/%s15.xml"
+BASE_URL = "https://officecdn.microsoft.com/pr/%s/OfficeMac/%s.xml"
+
+# These can be easily be found as "Application ID" in ~/Library/Preferences/com.microsoft.autoupdate2.plist on a
+# machine that has Microsoft AutoUpdate.app installed on it.
+#
+# Note that Skype, 'MSFB' has a '16' after it, AutoUpdate has a '03' after it while all the other products have '15'
+
 PROD_DICT = {
-    'Excel':'XCEL',
-    'OneNote':'ONMC',
-    'Outlook':'OPIM',
-    'PowerPoint':'PPT3',
-    'Word':'MSWD',
+    'Excel': {'id': 'XCEL15', 'path': '/Applications/Microsoft Excel.app'},
+    'OneNote': {'id': 'ONMC15', 'path': '/Applications/Microsoft OneNote.app'},
+    'Outlook': {'id': 'OPIM15', 'path': '/Applications/Microsoft Outlook.app'},
+    'PowerPoint': {'id': 'PPT315', 'path': '/Applications/Microsoft PowerPoint.app'},
+    'Word': {'id': 'MSWD15', 'path': '/Applications/Microsoft Word.app'},
+    'SkypeForBusiness': {'id': 'MSFB16', 'path': '/Applications/Skype for Business.app'},
+    'AutoUpdate': {
+        'id': 'MSau03',
+        'path': '/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app'
+    }
 }
 LOCALE_ID_INFO_URL = "https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
-SUPPORTED_VERSIONS = ["latest", "latest"]
+SUPPORTED_VERSIONS = ["latest", "latest-delta"]
 DEFAULT_VERSION = "latest"
+CHANNELS = {
+    'Production': 'C1297A47-86C4-4C1F-97FA-950631F94777',
+    'InsiderSlow': '1ac37578-5a24-40fb-892e-b89d85b6dfaa',
+    'InsiderFast': '4B2D7701-0A4F-49C8-B4CB-0C2D4043F51F',
+}
+DEFAULT_CHANNEL = "Production"
 
 class MSOffice2016URLandUpdateInfoProvider(Processor):
     """Provides a download URL for the most recent version of MS Office 2016."""
@@ -76,6 +93,16 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
                  "metadata. If this key is set, this name will be used "
                  "for the required item. If unset, NAME will be used.")
         },
+        "channel": {
+            "required": False,
+            "default": DEFAULT_CHANNEL,
+            "description":
+                ("Update feed channel that will be checked for updates. "
+                 "Defaults to %s, acceptable values are either a custom "
+                 "UUID or one of: %s" % (
+                    DEFAULT_CHANNEL,
+                    ", ".join(CHANNELS.keys())))
+        }
     }
     output_variables = {
         "additional_pkginfo": {
@@ -121,77 +148,61 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
             raise ProcessorError(
                 "Unexpected Trigger Condition in item %s: %s"
                 % (item["Title"], item["Trigger Condition"]))
-        if not "Registered File" in item.get("Triggers", {}):
-            raise ProcessorError(
-                "Missing expected 'and Registered File' Trigger in item "
-                "%s" % item["Title"])
 
     def get_installs_items(self, item):
         """Attempts to parse the Triggers to create an installs item using
         only manifest data, making the assumption that CFBundleVersion and
-        CFBundleShortVersionString are equal."""
-        self.sanity_check_expected_triggers(item)
+        CFBundleShortVersionString are equal. Skip SkypeForBusiness as its
+        xml does not contain a 'Trigger Condition'"""
+        if self.env["product"] != 'SkypeForBusiness':
+            self.sanity_check_expected_triggers(item)
         version = self.get_version(item)
+        # Skipping CFBundleShortVersionString because it doesn't contain
+        # anything more specific than major.minor (no build versions
+        # distinguishing Insider builds for example)
         installs_item = {
-            "CFBundleShortVersionString": version,
             "CFBundleVersion": version,
-            "path": ("/Applications/Microsoft %s.app" % self.env["product"]),
+            "path": PROD_DICT[self.env["product"]]['path'],
             "type": "application",
         }
         return [installs_item]
 
     def get_version(self, item):
         """Extracts the version of the update item."""
-        # We currently expect the version at the end of the Title key,
-        # e.g.: "Microsoft Excel Update 15.10.0"
-        # Work backwards from the end and break on the first thing
-        # that looks like a version
-        for element in reversed(item["Title"].split()):
-            match = re.match(r"(\d+\.\d+(\.\d)*)", element)
-            if match:
-                break
-        if not match:
-            raise ProcessorError(
-                "Error validating Office 2016 version extracted "
-                "from Title manifest value: '%s'" % item["Title"])
-        version = match.group(0)
-        return version
-
-    def value_to_os_version_string(self, value):
-        """Converts a value to an OS X version number"""
-        if isinstance(value, int):
-            version_str = hex(value)[2:]
-        elif isinstance(value, basestring):
-            if value.startswith('0x'):
-                version_str = value[2:]
-        # OS versions are encoded as hex:
-        # 4184 = 0x1058 = 10.5.8
-        major = 0
-        minor = 0
-        patch = 0
-        try:
-            if len(version_str) == 1:
-                major = int(version_str[0])
-            if len(version_str) > 1:
-                major = int(version_str[0:2])
-            if len(version_str) > 2:
-                minor = int(version_str[2], 16)
-            if len(version_str) > 3:
-                patch = int(version_str[3], 16)
-        except ValueError:
-            raise ProcessorError("Unexpected value in version: %s" % value)
-        return "%s.%s.%s" % (major, minor, patch)
+        # If the 'Update Version' key exists we pull the "full" version string
+        # easily from this
+        if item.get("Update Version"):
+            self.output(
+                "Extracting version %s from metadata 'Update Version' key" %
+                item["Update Version"])
+            return item["Update Version"]
 
     def get_installer_info(self):
         """Gets info about an installer from MS metadata."""
-        base_url = BASE_URL % (CULTURE_CODE + PROD_DICT[self.env["product"]])
+        # Get the channel UUID, matching against a custom UUID if one is given
+        channel_input = self.env.get("channel", DEFAULT_CHANNEL)
+        rex = r"^([0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12})$"
+        match_uuid = re.match(rex, channel_input)
+        if not match_uuid and channel_input not in CHANNELS.keys():
+            raise ProcessorError(
+                "'channel' input variable must be one of: %s or a custom "
+                "uuid" % (", ".join(CHANNELS.keys())))
+        if match_uuid:
+            channel = match_uuid.groups()[0]
+        else:
+            channel = CHANNELS[channel_input]
+        base_url = BASE_URL % (channel,
+                               CULTURE_CODE + PROD_DICT[self.env["product"]]['id'])
+
         # Get metadata URL
+        self.output("Requesting xml: %s" % base_url)
         req = urllib2.Request(base_url)
         # Add the MAU User-Agent, since MAU feed server seems to explicitly
         # block a User-Agent of 'Python-urllib/2.7' - even a blank User-Agent
         # string passes.
-        req.add_header("User-Agent",
-                       "Microsoft%20AutoUpdate/3.0.6 CFNetwork/720.2.4 Darwin/14.4.0 (x86_64)")
+        req.add_header(
+            "User-Agent",
+            "Microsoft%20AutoUpdate/3.6.16080300 CFNetwork/760.6.3 Darwin/15.6.0 (x86_64)")
 
         try:
             fdesc = urllib2.urlopen(req)
@@ -208,7 +219,7 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
         # which item has that key.
         if self.env["version"] == "latest":
             item = [u for u in metadata if not u.get("FullUpdaterLocation")]
-        elif self.env["version"] == "latest":
+        elif self.env["version"] == "latest-delta":
             item = [u for u in metadata if u.get("FullUpdaterLocation")]
         if not item:
             raise ProcessorError("Could not find an applicable update in "
@@ -237,18 +248,15 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
         pkginfo["description"] = "<html>%s</html>" % manifest_description
         self.env["description"] = manifest_description
 
-        max_os = self.value_to_os_version_string(item['Max OS'])
-        min_os = self.value_to_os_version_string(item['Min OS'])
-        if max_os != "0.0.0":
-            pkginfo["maximum_os_version"] = max_os
-        if min_os != "0.0.0":
-            pkginfo["minimum_os_version"] = min_os
+        # Minimum OS version key should exist always, but default to the current
+        # minimum as of 16/11/03
+        pkginfo["minimum_os_version"] = item.get('Minimum OS', '10.10.5')
         installs_items = self.get_installs_items(item)
         if installs_items:
             pkginfo["installs"] = installs_items
 
         # Extra work to do if this is a delta updater
-        if self.env["version"] == "latest":
+        if self.env["version"] == "latest-delta":
             try:
                 rel_versions = item["Triggers"]["Registered File"]["VersionsRelative"]
             except KeyError:
@@ -276,7 +284,7 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
                                               self.min_delta_version)]
 
         self.env["version"] = self.get_version(item)
-        self.env["minimum_os_version"] = min_os
+        self.env["minimum_os_version"] = pkginfo["minimum_os_version"]
         self.env["minimum_version_for_delta"] = self.min_delta_version
         self.env["additional_pkginfo"] = pkginfo
         self.env["url"] = item["Location"]
@@ -292,4 +300,4 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
 
 if __name__ == "__main__":
     PROCESSOR = MSOffice2016URLandUpdateInfoProvider()
-    PROCESSOR.execute_shell()
+PROCESSOR.execute_shell()
