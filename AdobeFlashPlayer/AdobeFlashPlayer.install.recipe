@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.Adobe.FlashPlayer</string>
+    <string>lan.sciurus.download.Adobe.FlashPlayer</string>
     <key>Process</key>
     <array>
         <dict>
