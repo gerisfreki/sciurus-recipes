@@ -15,7 +15,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.pkg.AdobeShockwavePlayer</string>
+    <string>lan.sciurus.pkg.Adobe.ShockwavePlayer</string>
     <key>Process</key>
     <array>
         <dict>
