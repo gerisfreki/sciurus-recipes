@@ -37,31 +37,27 @@
 	<key>ParentRecipe</key>
 	<string>lan.sciurus.autopkg.download.Apache.DirectoryStudio</string>
 	<key>Process</key>
-	<array>
+				<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>source</key>
-				<string>%dmg_path%</string>
-				<key>target</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%-%version%.dmg</string>
+				<key>dmg_path</key>
+				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
-			<string>FileMover</string>
+			<string>AppDmgVersioner</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
-				<string>%dmg_path%</string>
+				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
 		</dict>
-	</array>
+</array>
 </dict>
 </plist>
