@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.6.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.download.Silverlight</string>
+	<string>lan.sciurus.download.Microsoft.Silverlight</string>
     <key>Process</key>
     <array>
         <dict>
