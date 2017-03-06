@@ -22,6 +22,8 @@ If you would like to use an undocumented HTTPS download, set DOWNLOAD_URL_SCHEME
         <string>0407</string>
         <key>DOWNLOAD_URL_SCHEME</key>
         <string>http</string>
+        <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+        <true/>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
