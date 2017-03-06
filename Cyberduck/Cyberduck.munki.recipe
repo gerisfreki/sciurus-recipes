@@ -23,7 +23,7 @@
             <key>developer</key>
             <string>iterate GmbH</string>
             <key>category</key>
-            <string>Tools/File Exchange/%NAME%</string>
+            <string>File Exchange</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -59,7 +59,7 @@
                 <key>pkg_path</key>
                 <string>%dmg_path%</string>
                 <key>repo_subdirectory</key>
-                <string>Tools/Cyberduck</string>
+                <string>Tools/File Exchange/%NAME%</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
