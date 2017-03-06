@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Angry IP Scanner and imports it into Munki.</string>
+	<string>Downloads the latest version of ApacheDirectoryStudio and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>lan.sciurus.munki.AngryIPScanner</string>
+	<string>lan.sciurus.munki.Apache.DirectoryStudio</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>Angry IP Scanner</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>Tools/Networking/%NAME%</string>
-
+		<string>Tools/Network/%NAME%</string>
+		<key>NAME</key>
+		<string>ApacheDirectoryStudio</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -20,61 +19,45 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Angry IP Scanner - fast and friendly network scanner</string>
+			<string>Complete LDAP tooling platform.</string>
 			<key>developer</key>
-			<string>Anton Keks</string>
-			<key>display_name</key>
-			<string>Angry IP Scanner</string>
+			<string>Apache</string>
 			<key>category</key>
 			<string>Tools</string>
+			<key>display_name</key>
+			<string>ApacheDirectoryStudio</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
-
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>lan.sciurus.download.AngryIPScanner</string>
+	<string>lan.sciurus.download.Apache.DirectoryStudio</string>
 	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>archive_path</key>
-				<string>%pathname%</string>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-			<key>Processor</key>
-			<string>Unarchiver</string>
-		</dict>
+				<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>dmg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-				<key>dmg_root</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications</string>
+				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
-			<string>DmgCreator</string>
+			<string>AppDmgVersioner</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
-				<string>%dmg_path%</string>
+				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
 		</dict>
-	</array>
+</array>
 </dict>
 </plist>
