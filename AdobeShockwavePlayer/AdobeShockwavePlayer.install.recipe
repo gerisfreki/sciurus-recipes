@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Adobe Shockwave Player disk image, creates a mac installer pkg
+ and installs it.</string>
+    <key>Identifier</key>
+    <string>lan.sciurus.install.Adobe.ShockwavePlayer</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>AdobeShockwavePlayer</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.6.0</string>
+    <key>ParentRecipe</key>
+    <string>lan.sciurus.pkg.AdobeShockwavePlayer</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>flat_pkg_path</key>
+                <string>%pathname%/*.pkg</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+            <key>Processor</key>
+            <string>FlatPkgUnpacker</string>
+        </dict>
+         <dict>
+            <key>Processor</key>
+            <string>AdobeShockwaveVersioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_file_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%/Distribution</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Installer</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%/Shockwave_Installer_Full.pkg</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
