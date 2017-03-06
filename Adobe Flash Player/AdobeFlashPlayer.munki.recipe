@@ -2,12 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads Adobe Flash Player installer, imports into Munki.</string>
-
-    <key>Identifier</key>
-    <string>lan.sciurus.autopkg.munki.Adobe.FlashPlayer</string>
-
+    <key>Description</key>                  <string>Downloads Adobe Flash Player installer, imports into Munki.</string>
+    <key>Identifier</key>                   <string>lan.sciurus.autopkg.munki.Adobe.FlashPlayer</string>
     <key>Input</key>
       <dict>
           <key>pkginfo</key>
@@ -21,22 +17,19 @@
             <key>unattended_install</key>   <true/>
           </dict>
       </dict>
-
     <key>MinimumVersion</key>               <string>0.6.1</string>
     <key>ParentRecipe</key>                 <string>lan.sciurus.autopkg.download.Adobe.FlashPlayer</string>
-
     <key>Process</key>
       <array>
       <dict>
         <key>Arguments</key>
         <dict>
           <key>pkg_path</key>               <string>%pathname%</string>
-          <key>repo_subdirectory</key>      <string>Plugins/Adobe Flash Player</string>
+          <key>repo_subdirectory</key>      <string>Plugins/%NAME%</string>
           <key>munkiimport_pkgname</key>    <string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
         </dict>
         <key>Processor</key>                <string>MunkiImporter</string>
       </dict>
       </array>
-
 </dict>
 </plist>
