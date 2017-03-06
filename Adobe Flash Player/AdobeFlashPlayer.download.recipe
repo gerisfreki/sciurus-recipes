@@ -2,33 +2,43 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key> <string>Downloads Adobe Flash Player installer.</string>
-    <key>Identifier</key>    <string>lan.sciurus.autopkg.download.Adobe.FlashPlayer</string>
+    <key>Description</key>
+    <string>Downloads Adobe Flash Player installer.</string>
+    <key>Identifier</key>
+    <string>lan.sciurus.autopkg.download.Adobe.FlashPlayer</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>        <string>AdobeFlashPlayer</string>
+        <key>NAME</key>
+        <string>AdobeFlashPlayer</string>
     </dict>
-    <key>MinimumVersion</key>    <string>0.6.1</string>
+    <key>MinimumVersion</key>
+    <string>0.6.1</string>
     <key>Process</key>
     <array>
         <dict>
-            <key>Processor</key>            <string>AdobeFlashURLProvider</string>
+            <key>Processor</key>
+            <string>AdobeFlashURLProvider</string>
         </dict>
         <dict>
-            <key>Processor</key>            <string>URLDownloader</string>
+            <key>Processor</key>
+            <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
-                <key>filename</key>                <string>%NAME%.dmg</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
             </dict>
         </dict>
         <dict>
-            <key>Processor</key>            <string>EndOfCheckPhase</string>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
         </dict>
         <dict>
-            <key>Processor</key>            <string>CodeSignatureVerifier</string>
+            <key>Processor</key>
+            <string>CodeSignatureVerifier</string>
             <key>Arguments</key>
             <dict>
-                <key>input_path</key>                <string>%pathname%/Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
+                <key>input_path</key>
+                <string>%pathname%/Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
                 <key>expected_authority_names</key>
                 <array>
                     <string>Developer ID Installer: Adobe Systems, Inc.</string>
