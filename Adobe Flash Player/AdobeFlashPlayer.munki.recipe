@@ -38,7 +38,7 @@
           <key>pkg_path</key>
           <string>%pathname%</string>
           <key>repo_subdirectory</key>
-          <string>Plugins/%NAME%</string>
+          <string>Plugins/%NAME%/</string>
           <key>munkiimport_pkgname</key>
           <string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
         </dict>
