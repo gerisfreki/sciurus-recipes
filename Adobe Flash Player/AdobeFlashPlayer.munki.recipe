@@ -21,7 +21,9 @@
             <key>category</key>
             <string>Plugins</string>
             <key>catalogs</key>
-            <string>testing</string>
+              <array>
+              <string>testing</string>
+              </array>
             <key>unattended_install</key>
             <true/>
           </dict>
