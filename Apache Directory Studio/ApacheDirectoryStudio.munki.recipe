@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>Tools/Network/%NAME%</string>
+		<string>Tools/Networking/%NAME%</string>
 		<key>NAME</key>
 		<string>ApacheDirectoryStudio</string>
 		<key>pkginfo</key>
