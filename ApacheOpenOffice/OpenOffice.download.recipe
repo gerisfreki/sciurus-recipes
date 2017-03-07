@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest OpenOffice.</string>
 	<key>Identifier</key>
-	<string>lan.sciurus.download.Apache.OpenOffice.old</string>
+	<string>lan.sciurus.download.Apache.OpenOffice</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
