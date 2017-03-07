@@ -12,7 +12,7 @@
 		<string>OpenOffice</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.6.1</string>
+	<string>0.2.9</string>
 	<key>ParentRecipe</key>
 	<string>lan.sciurus.download.Apache.OpenOffice</string>
 	<key>Process</key>

@@ -37,7 +37,7 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.6.1</string>
+	<string>0.2.0</string>
 	<key>ParentRecipe</key>
 	<string>lan.sciurus.download.Apache.OpenOffice</string>
 	<key>Process</key>
