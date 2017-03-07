@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest Open Office. From io.github.hjuutilainen.download.OpenOffice</string>
+	<key>Identifier</key>
+	<string>lan.sciurus.download.Apache.OpenOffice</string>
+	<key>Input</key>
+	<dict>
+		<key>LANGUAGE</key>
+		<string>de</string>
+		<key>NAME</key>
+		<string>OpenOffice</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.4.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>re_pattern</key>
+				<string>http://sourceforge.net/projects/openofficeorg.mirror/files/(?P&lt;version&gt;[0-9\.]+)</string>
+				<key>url</key>
+				<string>http://sourceforge.net/projects/openofficeorg.mirror/rss?limit=1</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>re_pattern</key>
+				<string>(?P&lt;url&gt;http://.*/%version%/binaries/%LANGUAGE%/.*_MacOS_x86-64_install_%LANGUAGE%\.dmg/download)</string>
+				<key>url</key>
+				<string>http://sourceforge.net/projects/openofficeorg.mirror/rss?path=/%version%/binaries/%LANGUAGE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
