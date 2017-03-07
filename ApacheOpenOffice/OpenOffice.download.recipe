@@ -13,7 +13,7 @@
 		<key>LANGUAGE</key>
 		<string>de</string>
 		<key>BASE_URL</key>
-		<string>https://www.apache.org/dyn/closer.lua/openoffice/</string>
+		<string>http://www-eu.apache.org/dist/openoffice/</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>
