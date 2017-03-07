@@ -3,50 +3,41 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Open Office. From io.github.hjuutilainen.download.OpenOffice</string>
+	<string>Downloads the latest OpenOffice.</string>
 	<key>Identifier</key>
-	<string>lan.sciurus.download.Apache.OpenOffice</string>
+	<string>lan.sciurus.download.Apache.OpenOffice.old</string>
 	<key>Input</key>
 	<dict>
-		<key>LANGUAGE</key>
-		<string>de</string>
 		<key>NAME</key>
 		<string>OpenOffice</string>
+		<key>LANGUAGE</key>
+		<string>de</string>
+		<key>BASE_URL</key>
+		<string>https://www.apache.org/dyn/closer.lua/openoffice/</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.4.0</string>
+	<string>0.2.9</string>
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Processor</key>
+			<string>OpenOfficeURLProvider</string>
 			<key>Arguments</key>
 			<dict>
-				<key>re_pattern</key>
-				<string>http://sourceforge.net/projects/openofficeorg.mirror/files/(?P&lt;version&gt;[0-9\.]+)</string>
-				<key>url</key>
-				<string>http://sourceforge.net/projects/openofficeorg.mirror/rss?limit=1</string>
+				<key>base_url</key>
+				<string>%BASE_URL%</string>
+				<key>language_code</key>
+				<string>%LANGUAGE%</string>
 			</dict>
-			<key>Processor</key>
-			<string>URLTextSearcher</string>
 		</dict>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>re_pattern</key>
-				<string>(?P&lt;url&gt;http://.*/%version%/binaries/%LANGUAGE%/.*_MacOS_x86-64_install_%LANGUAGE%\.dmg/download)</string>
-				<key>url</key>
-				<string>http://sourceforge.net/projects/openofficeorg.mirror/rss?path=/%version%/binaries/%LANGUAGE%</string>
-			</dict>
 			<key>Processor</key>
-			<string>URLTextSearcher</string>
-		</dict>
-		<dict>
+			<string>URLDownloader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 			</dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
