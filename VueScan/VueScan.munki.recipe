@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest VueScan and imports into Munki. This recipe relies upon the com.github.hansen-m.download.VueScan recipe, so be certain you have added his autopkg repo https://github.com/autopkg/hansen-m-recipes.git.</string>
+	<key>Identifier</key>
+	<string>lan.sciurus.munki.VueScan</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>VueScan</string>
+        <key>APPNAME</key>
+        <string>%NAME%.app</string>
+        <key>repo_subdirectory</key>
+        <string>Tools/Scanner/VueScan</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>VueScan is a powerful, easy-to-use program that scans documents, photos and film; creates PDF, JPEG, TIFF and TXT files; supports nearly 2000 scanners; For more information go to http://www.hamrick.com.</string>
+			<key>display_name</key>
+			<string>%NAME%</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>blocking_applications</key>
+			<array>
+				<string>%NAME%</string>
+			</array>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.4.0</string>
+    <key>ParentRecipe</key>
+    <string>lan.sciurus.download.VueScan</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/%APPNAME%</string>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Application: Edward Hamrick</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%pathname%</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
