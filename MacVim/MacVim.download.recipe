@@ -15,7 +15,7 @@
         <key>REPO_NAME</key>
         <string>macvim</string>
         <key>SEARCH_PATTERN</key>
-        <string>&lt;a href="(https://github.com/macvim-dev/macvim/releases/download/.*/MacVim\.dmg)"</string>
+        <string>&lt;a href="(.*/download/.*/MacVim\.dmg)"</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
