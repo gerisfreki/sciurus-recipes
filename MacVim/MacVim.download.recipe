@@ -11,9 +11,9 @@
         <key>NAME</key>
         <string>MacVim</string>
         <key>MAJOR_OS_VERSION</key>
-        <string>Mavericks</string>
+        <string>Sierra</string>
 		<key>REPO_OWNER</key>
-		<string>b4winckler</string>
+		<string>macvim-dev</string>
 		<key>REPO_NAME</key>
 		<string>macvim</string>
         	<key>SEARCH_PATTERN</key>
