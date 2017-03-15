@@ -8,6 +8,8 @@
         <string>lan.sciurus.download.GPGSuite</string>
         <key>Input</key>
         <dict>
+            <key>FAIL_RECIPES_WITHOUT_TRUST_INFO</key>
+            <false />
             <key>NAME</key>
             <string>GPGSuite</string>
             <key>URL</key>
