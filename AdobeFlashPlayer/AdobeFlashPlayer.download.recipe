@@ -10,6 +10,8 @@
     <dict>
         <key>NAME</key>
         <string>AdobeFlashPlayer</string>
+        <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+        <true />
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
