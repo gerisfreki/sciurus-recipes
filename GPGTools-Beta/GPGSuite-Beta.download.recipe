@@ -12,12 +12,12 @@
             <false />
             <key>NAME</key>
             <string>GPGSuite</string>
+            <!--
             <key>URL</key>
             <string>https://gpgtools.org/gpgsuite.html</string>
-            <!-- for beta versions, use the following
+            -->
             <key>URL</key>
             <string>https://gpgtools.org/news.html</string>
-            -->
         </dict>
         <key>MinimumVersion</key>
         <string>0.3.1</string>
