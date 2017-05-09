@@ -6,6 +6,8 @@
 	<string>Downloads the latest version of Angry IP Scanner.</string>
 	<key>Identifier</key>
 	<string>lan.sciurus.download.AngryIPScanner</string>
+	<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+	<true />
 	<key>Input</key>
 	<dict>
 		<key>GITHUB_REPO</key>

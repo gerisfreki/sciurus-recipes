@@ -6,6 +6,8 @@
     <string>Downloads the latest release version of MacVim for OS X where MAJOR_OS_VERSION is Snow-Leopard, Mountain-Lion or Mavericks (default).</string>
     <key>Identifier</key>
     <string>lan.sciurus.download.MacVim</string>
+    <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+    <true />
     <key>Input</key>
     <dict>
         <key>NAME</key>

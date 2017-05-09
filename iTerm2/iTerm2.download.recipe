@@ -6,6 +6,8 @@
 	<string>Downloads the current version of iTerm2. Set RELEASE to either "final" or "testing". For iTerm2 version 3 beta, set RELEASE to "testing3".</string>
 	<key>Identifier</key>
 	<string>lan.sciurus.download.iTerm2</string>
+	<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+	<true />
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

@@ -6,6 +6,8 @@
 	<string>Downloads the latest version of GIMP from gimp.org.</string>
 	<key>Identifier</key>
 	<string>lan.sciurus.download.GIMP</string>
+	<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+	<true />
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

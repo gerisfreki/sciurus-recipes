@@ -6,6 +6,8 @@
         <string>Download recipe for GPGSuite.</string>
         <key>Identifier</key>
         <string>lan.sciurus.download.GPGSuite.beta</string>
+        <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+        <true />
         <key>Input</key>
         <dict>
             <key>FAIL_RECIPES_WITHOUT_TRUST_INFO</key>

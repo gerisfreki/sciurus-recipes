@@ -6,6 +6,8 @@
 	<string>Downloads the latest version of Adobe Brackets.</string>
 	<key>Identifier</key>
 	<string>lan.sciurus.download.Brackets</string>
+	<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+	<true />
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
