@@ -6,6 +6,7 @@
     <string>Downloads and imports a pre-built Munki 2.</string>
     <key>Identifier</key>
     <string>lan.sciurus.munki.munkitools.autobuild</string>
+    <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key><true />
     <key>Input</key>
     <dict>
         <key>DOWNLOAD_URL</key>

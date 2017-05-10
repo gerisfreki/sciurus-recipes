@@ -6,6 +6,8 @@
     <string>Download recipe for Oracle's Java 8. Finds and downloads the latest Oracle Java 8 JRE CPU release.</string>
     <key>Identifier</key>
     <string>lan.sciurus.download.Oracle.Java8</string>
+    <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+    <true />
     <key>Input</key>
     <dict>
         <key>NAME</key>

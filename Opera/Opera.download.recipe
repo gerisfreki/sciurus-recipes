@@ -6,6 +6,8 @@
 	<string>Downloads latest Opera disk image.</string>
 	<key>Identifier</key>
 	<string>lan.sciurus.download.Opera</string>
+	<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+	<true />
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
