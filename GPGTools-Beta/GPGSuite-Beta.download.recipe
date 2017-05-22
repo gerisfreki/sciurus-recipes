@@ -8,16 +8,12 @@
         <string>lan.sciurus.download.GPGSuite.beta</string>
         <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
         <true />
+        <key>FAIL_RECIPES_WITHOUT_TRUST_INFO</key>
+        <false />
         <key>Input</key>
         <dict>
-            <key>FAIL_RECIPES_WITHOUT_TRUST_INFO</key>
-            <false />
             <key>NAME</key>
             <string>GPGSuite</string>
-            <!--
-            <key>URL</key>
-            <string>https://gpgtools.org/gpgsuite.html</string>
-            -->
             <key>URL</key>
             <string>https://gpgtools.org/news.html</string>
         </dict>
@@ -33,7 +29,7 @@
                     <key>url</key>
                     <string>%URL%</string>
                     <key>re_pattern</key>
-                    <string>href=\"https://releases.gpgtools.org/GPG_Suite-([0-9a-z\._]+)\.dmg\"</string>
+                    <string>href=\"https://releases.gpgtools.org/GPG_Suite-2017([0-9a-z\._]+)\.dmg\"</string>
                     <key>result_output_var_name</key>
                     <string>version</string>
                 </dict>
