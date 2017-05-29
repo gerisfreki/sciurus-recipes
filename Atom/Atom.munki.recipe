@@ -13,7 +13,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>Tools/Editors/Atom</string>
 		<key>MUNKI_CATEGORY</key>
-		<string>Editoren</string>
+		<string>Editor</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>

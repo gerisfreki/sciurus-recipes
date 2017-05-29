@@ -13,7 +13,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>Tools/Editors/GIMP</string>
 		<key>MUNKI_CATEGORY</key>
-		<string>Image Manipulation</string>
+		<string>%category%</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>blocking_applications</key>
@@ -36,7 +36,7 @@
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>category</key>
-			<string>Bearbeitung</string>
+			<string>Editor</string>
 			<key>unattended_install</key>
 			<true/>
 			<key>unattended_uninstall</key>

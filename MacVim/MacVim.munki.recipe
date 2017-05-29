@@ -12,6 +12,8 @@
         <string>MacVim</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>Tools/Editors/%NAME%</string>
+        <key>MUNKI_CATEGORY</key>
+        <string>Editor</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>

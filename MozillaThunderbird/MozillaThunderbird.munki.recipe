@@ -20,7 +20,7 @@
             <key>name</key>
             <string>MozillaThunderbird</string>
             <key>category</key>
-            <string>E-Mail</string>
+            <string>Office</string>
             <key>developer</key>
             <string>Mozilla</string>
             <key>unattended_install</key>
