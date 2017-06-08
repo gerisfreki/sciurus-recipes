@@ -9,17 +9,17 @@
     <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key><true />
     <key>Input</key>
     <dict>
-<!--        <key>DOWNLOAD_URL</key>
-        <string>https://munkibuilds.org/munkitools2-latest.pkg</string>
+     <key>DOWNLOAD_URL</key>
+        <string>https://github.com/munki/munki/releases</string>
         <key>PRODUCT_RE_PATTERN</key>
-        <string>.a.+href="(https://github.com/munki/munki/releases/download/v[\d\.+]/munkitools-[\d\.]+.pkg)"</string> -->
-        <key>Process</key>
+        <string>.a.+href="(https://github.com/munki/munki/releases/download/v([\d\.+])/munkitools-([\d\.+]).pkg)"</string>
+<!--    <key>Process</key>
         <array>
           <dict>
             <key>Arguments</key>
             <dict>
               <key>re_pattern</key>
-              <string>&lt;a href="(https://munkibuilds.org/_branches/Munki3/[0-9].+)"&gt;</string>
+              <string>"[0-9].+"</string>
               <key>result_output_var_name</key>
               <string>version</string>
               <key>url</key>
@@ -39,7 +39,7 @@
           </dict>
           <dict>
             <key>Processor</key>
-            <string>EndOfCheckPhase</string>
+            <string>EndOfCheckPhase</string> -->
         <key>NAME</key>
         <string>MunkiTools2</string>
         <key>MUNKI_CATALOG</key>
