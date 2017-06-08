@@ -10,9 +10,9 @@
     <key>Input</key>
     <dict>
      <key>DOWNLOAD_URL</key>
-        <string>https://munkibuilds.org/_branches/Munki3/%version%/munkitools-%version%.pkg</string>
-        <key>PRODUCT_RE_PATTERN</key>
-        <string>.a.+href="(https://munkibuilds.org/_branches/Munki3/([\d\.+])"</string>
+    <string>https://munkibuilds.org/_branches/Munki3/%version%/munkitools-%version%.pkg</string>
+    <key>PRODUCT_RE_PATTERN</key>
+        <string>.a.+href="https://munkibuilds.org/_branches/Munki3/([\d\.+])"</string>
         <key>result_output_var_name</key>
         <string>version</string>
 
