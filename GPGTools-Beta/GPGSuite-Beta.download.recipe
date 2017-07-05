@@ -13,7 +13,7 @@
             <key>NAME</key>
             <string>GPGSuite</string>
             <key>URL</key>
-            <string>https://releases.gpgtools.org/nightlies/</string>
+            <string>https://gpgtools.org/news.html</string>
         </dict>
         <key>MinimumVersion</key>
         <string>0.3.1</string>
@@ -27,7 +27,7 @@
                     <key>url</key>
                     <string>%URL%</string>
                     <key>re_pattern</key>
-                    <string>href=\"https://releases.gpgtools.org/nightlies/GPG_Suite-[0-9]n\.dmg\"</string>
+                    <string>href=\"https://releases.gpgtools.org/GPG_Suite-([0-9]+.[0-9a-z-]*)\.dmg"</string>
                     <key>result_output_var_name</key>
                     <string>version</string>
                 </dict>
@@ -36,7 +36,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>url</key>
-                    <string>https://releases.gpgtools.org/nightlies/GPG_Suite-%version%.dmg</string>
+                    <string>https://releases.gpgtools.org/GPG_Suite-%version%.dmg</string>
                     <key>filename</key>
                     <string>%NAME%.dmg</string>
                 </dict>
