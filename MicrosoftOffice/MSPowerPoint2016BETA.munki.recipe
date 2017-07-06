@@ -57,7 +57,7 @@ the latest full update for the given CHANNEL.
         </dict>
     </dict>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.download.MSPowerPoint2016</string>
+    <string>lan.sciurus.download.MSPowerPoint2016BETA</string>
     <key>Process</key>
     <array>
         <dict>
