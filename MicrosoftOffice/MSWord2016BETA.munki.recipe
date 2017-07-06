@@ -49,7 +49,7 @@ the latest full update for the given CHANNEL.
                 <string>testing</string>
             </array>
             <key>display_name</key>
-            <string>Microsoft Word 2016 for Mac (Insider-Preview)</string>
+            <string>(Insider-Preview) Microsoft Word 2016 for Mac</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
