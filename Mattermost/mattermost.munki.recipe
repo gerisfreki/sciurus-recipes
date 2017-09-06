@@ -8,6 +8,8 @@
 	<string>lan.sciurus.munki.Mattermost</string>
 	<key>Input</key>
 	<dict>
+		<key>display_name</key>
+		<string>%NAME%</string>
 		<key>NAME</key>
 		<string>Mattermost</string>
         <key>MUNKI_REPO_SUBDIR</key>
