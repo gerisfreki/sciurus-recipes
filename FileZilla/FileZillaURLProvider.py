@@ -17,12 +17,14 @@
 
 import urllib2
 import re
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 from autopkglib import Processor, ProcessorError
 
 __all__ = ["FileZillaURLProvider"]
 
-update_url = "http://update.filezilla-project.org/updatecheck.php?platform=i686-apple-darwin9&version=3.0.0&osversion=12"
+update_url = "https://update.filezilla-project.org/updatecheck.php?platform=i686-apple-darwin9&version=3.0.0&osversion=12"
 
 prods = {"FileZilla": "release",
          "FileZilla_release": "release",
@@ -98,6 +100,7 @@ class FileZillaURLProvider(Processor):
         self.env["version"] = version
         self.env["url"] = url
         self.output("Found URL %s" % self.env["url"])
+
 
 if __name__ == "__main__":
     processor = FileZillaURLProvider()
