@@ -44,12 +44,12 @@ class OperaURLProvider(Processor):
     def get_opera_url(self, url):
         try:
             page = urllib2.urlopen(url).read()
-            links = re.findall("(.*)", page)
+            links = re.findall("[0-9]+.*", page)
             # links = re.findall("<a.*?\s*href=\"(.*?)\".*?>", page)
             url += max(links) + "mac/"
 
             page = urllib2.urlopen(url).read()
-            links = re.findall("(.*)", page)
+            links = re.findall("[0-9]+.*", page)
             # links = re.findall("<a.*?\s*href=\"(.*?)\".*?>", page)
             for link in links:
                 if ".dmg" in link:
