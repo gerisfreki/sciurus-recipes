@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Skype</string>
+        <string>Skype-new</string>
         <key>DOWNLOAD_URL</key>
         <string>https://go.skype.com/skype.download</string>
     </dict>
