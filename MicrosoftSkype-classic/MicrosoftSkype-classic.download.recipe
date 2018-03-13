@@ -5,13 +5,13 @@
     <key>Description</key>
     <string>Downloads latest Skype disk image.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.download.Microsoft.Skype</string>
+    <string>lan.sciurus.download.Microsoft.Skype.classic</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>Skype</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://www.skype.com/go/getskype-macosx.dmg</string>
+        <string>https://go.skype.com/classic.skype</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>

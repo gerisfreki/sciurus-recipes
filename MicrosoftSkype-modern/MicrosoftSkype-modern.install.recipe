@@ -5,18 +5,18 @@
     <key>Description</key>
     <string>Downloads and installs latest Skype client.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.install.Microsoft.Skype</string>
+    <string>lan.sciurus.install.Microsoft.Skype.modern</string>
     <key>Input</key>
     <dict>
         <key>DOWNLOAD_URL</key>
-        <string>http://www.skype.com/go/getskype-macosx.dmg</string>
+        <string>https://go.skype.com/mac.download</string>
         <key>USER_AGENT</key>
         <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.download.Microsoft.Skype</string>
+    <string>lan.sciurus.download.Microsoft.Skype.modern</string>
     <key>Process</key>
     <array>
         <dict>

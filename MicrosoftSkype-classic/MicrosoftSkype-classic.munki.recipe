@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest Skype disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.munki.Microsoft.Skype</string>
+    <string>lan.sciurus.munki.Microsoft.Skype.classic</string>
     <key>Input</key>
     <dict>
         <key>pkginfo</key>
@@ -17,9 +17,9 @@
             <key>description</key>
             <string>Ob Telefonate führen, chatten oder Videochats mit den Liebsten - Skype verbindet alle funktionen der modernen Kommunikation unter einem Dach.</string>
             <key>display_name</key>
-            <string>Skype</string>
+            <string>Microsoft Skype (classic)</string>
             <key>name</key>
-            <string>MicrosoftSkype</string>
+            <string>MicrosoftSkype-classic</string>
             <key>developer</key>
             <string>Microsoft</string>
             <key>category</key>
@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.download.Microsoft.Skype</string>
+    <string>lan.sciurus.download.Microsoft.Skype.classic</string>
     <key>Process</key>
     <array>
         <dict>

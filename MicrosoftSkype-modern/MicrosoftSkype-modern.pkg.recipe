@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest Skype disk image and builds a package.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.pkg.Microsoft.Skype.new</string>
+    <string>lan.sciurus.pkg.Microsoft.Skype.modern</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.download.Microsoft.Skype.new</string>
+    <string>lan.sciurus.download.Microsoft.Skype.modern</string>
     <key>Process</key>
     <array>
         <dict>
@@ -66,7 +66,7 @@
                 <key>pkg_request</key>
                 <dict>
                     <key>pkgname</key>
-                    <string>%NAME%-%version%</string>
+                    <string>%NAME%-modern-%version%</string>
                     <key>version</key>
                     <string>%version%</string>
                     <key>id</key>
