@@ -17,7 +17,7 @@
             <key>description</key>
             <string>Mozilla Firefox ist ein kostenfreier und quelloffener Webbrowser für das moderne Internet.</string>
             <key>display_name</key>
-            <string>Mozilla Firefox</string>
+            <string>Mozilla Firefox (Beta)</string>
             <key>name</key>
             <string>MozillaFirefoxBeta</string>
             <key>category</key>

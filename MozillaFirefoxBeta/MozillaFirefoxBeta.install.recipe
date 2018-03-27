@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>RELEASE</key>
-        <string>latest</string>
+        <string>beta-latest</string>
         <key>LOCALE</key>
         <string>de</string>
     </dict>
