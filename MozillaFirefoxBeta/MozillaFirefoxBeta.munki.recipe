@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads Firefox disk image and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>lan.sciurus.munki.Mozilla.Firefox.Beta</string>
+    <key>Input</key>
+    <dict>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Mozilla Firefox ist ein kostenfreier und quelloffener Webbrowser für das moderne Internet.</string>
+            <key>display_name</key>
+            <string>Mozilla Firefox</string>
+            <key>name</key>
+            <string>MozillaFirefoxBeta</string>
+            <key>category</key>
+            <string>Browser</string>
+            <key>developer</key>
+            <string>Mozilla</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.6.1</string>
+    <key>ParentRecipe</key>
+    <string>lan.sciurus.download.Mozilla.Firefox.Beta</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>Office/Browsers/%NAME%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
