@@ -5,7 +5,7 @@
       <key>Description</key>
       <string>Downloads the latest version of Keka.</string>
       <key>Identifier</key>
-      <string>lan.sciurus.download.aOne.Keka</string>
+      <string>lan.sciurus.download.Keka</string>
       <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
       <true />
         <key>Input</key>
