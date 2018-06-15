@@ -25,7 +25,7 @@
             <key>description</key>
             <string>MunkiReport sammelt Informationen über Systemparameter und fasst diese in einer Übersicht zusammen.</string>
             <key>display_name</key>
-            <string>MunkiReport IT</string>
+            <string>MunkiReport Office</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
