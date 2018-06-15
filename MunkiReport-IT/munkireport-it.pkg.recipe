@@ -12,7 +12,7 @@
         <key>NAME</key>
         <string>MunkiReport</string>
         <key>BASEURL</key>
-        <string>http://monitoring.macserver-slave-it.sciurus.lan/index.php?/install</string>
+        <string>http://monitoring.macserver-slave-it.sciurus.lan</string>
         <key>modules</key>
         <array>
         </array>
