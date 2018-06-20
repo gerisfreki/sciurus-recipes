@@ -3,15 +3,15 @@
 <plist version="1.0">
     <dict>
         <key>Description</key>
-        <string>Downloads and packages the Adobe CreativeCloud App.</string>
+        <string>Downloads and packages the %NAME%.</string>
         <key>Identifier</key>
-        <string>lan.sciurus.pkg.Adobe.CreativeCloudApp</string>
+        <string>lan.sciurus.pkg.Adobe.CC.CCApp</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>CreativeCloudApp</string>
+            <string>Adobe CreativeCloud App</string>
             <key>FETCH_ICON</key>
-            <string>false</string>
+            <string>true</string>
             <key>FETCH_RELEASE_NOTES</key>
             <string>false</string>
             <key>ccpinfo</key>
@@ -32,11 +32,11 @@
 
                 <!-- Users may install apps via the Apps panel -->
                 <key>appsPanelEnabled</key>
-                <false/>
+                <true/>
 
                 <!-- CCDA will have admin privileges, allowing Standard users to install Apps -->
                 <key>adminPrivilegesEnabled</key>
-                <false/>
+                <true/>
 
                 <!-- Name of the organization (can be retrieved from ~/Library/Logs/PDApp.log) -->
                 <key>organizationName</key>
