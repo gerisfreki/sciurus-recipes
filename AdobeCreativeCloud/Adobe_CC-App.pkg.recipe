@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>Description</key>
-        <string>Downloads and packages the %NAME%.</string>
+        <string></string>
         <key>Identifier</key>
         <string>lan.sciurus.pkg.Adobe.CC.CCApp</string>
         <key>Input</key>
@@ -11,7 +11,7 @@
             <key>NAME</key>
             <string>Adobe CreativeCloud App</string>
             <key>FETCH_ICON</key>
-            <string>true</string>
+            <string>false</string>
             <key>FETCH_RELEASE_NOTES</key>
             <string>false</string>
             <key>ccpinfo</key>
