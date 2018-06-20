@@ -5,11 +5,11 @@
         <key>Description</key>
         <string></string>
         <key>Identifier</key>
-        <string>lan.sciurus.pkg.Adobe.CC.Lightroom</string>
+        <string>lan.sciurus.pkg.Adobe.CC.InDesign</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Adobe CC Lightroom</string>
+            <string>Adobe CC InDesign</string>
             <key>FETCH_ICON</key>
             <string>false</string>
             <key>FETCH_RELEASE_NOTES</key>
@@ -53,9 +53,9 @@
                 <array>
                     <dict>
                         <key>sapCode</key>
-                        <string>LRCC</string>
+                        <string>IDSN</string>
                         <key>baseVersion</key>
-                        <string>1.0</string>
+                        <string>13.0</string>
                         <key>version</key>
                         <string>latest</string>
                     </dict>

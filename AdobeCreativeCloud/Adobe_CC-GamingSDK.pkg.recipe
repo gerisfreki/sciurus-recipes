@@ -9,7 +9,7 @@
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Adobe CreativeCloud Gaming SDK</string>
+            <string>Adobe CC Gaming SDK</string>
             <key>FETCH_ICON</key>
             <string>false</string>
             <key>FETCH_RELEASE_NOTES</key>
