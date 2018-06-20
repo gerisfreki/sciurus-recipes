@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Description</key>
+        <string></string>
+        <key>Identifier</key>
+        <string>lan.sciurus.pkg.Adobe.CC.Lightroom</string>
+        <key>Input</key>
+        <dict>
+            <key>NAME</key>
+            <string>Adobe CreativeCloud Lightroom</string>
+            <key>FETCH_ICON</key>
+            <string>false</string>
+            <key>FETCH_RELEASE_NOTES</key>
+            <string>false</string>
+            <key>ccpinfo</key>
+            <dict>
+                <!-- Boolean flags -->
+
+                <!-- Build a package using the language set in the operating system -->
+                <key>matchOSLanguage</key>
+                <false/>
+
+                <!-- Enable Remote Update Manager -->
+                <key>rumEnabled</key>
+                <true/>
+
+                <!-- Updates Enabled -->
+                <key>updatesEnabled</key>
+                <false/>
+
+                <!-- Users may install apps via the Apps panel -->
+                <key>appsPanelEnabled</key>
+                <true/>
+
+                <!-- CCDA will have admin privileges, allowing Standard users to install Apps -->
+                <key>adminPrivilegesEnabled</key>
+                <true/>
+
+                <!-- Name of the organization (can be retrieved from ~/Library/Logs/PDApp.log) -->
+                <key>organizationName</key>
+                <string>Firstlead GmbH</string>
+
+                <!-- The customer license type: team or enterprise -->
+                <key>customerType</key>
+                <string>team</string>
+                <key>Language</key>
+                <string>de_DE</string>
+
+                <!-- Products -->
+                <key>Products</key>
+                <array>
+                    <dict>
+                        <key>sapCode</key>
+                        <string>LTRM</string>
+                        <key>baseVersion</key>
+                        <string>7.0</string>
+                        <key>version</key>
+                        <string>latest</string>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        <key>MinimumVersion</key>
+        <string>0.4.0</string>
+        <key>Process</key>
+        <array>
+            <dict>
+                <key>Processor</key>
+                <string>CreativeCloudFeed</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>fetch_icon</key>
+                    <string>%FETCH_ICON%</string>
+                    <key>fetch_release_notes</key>
+                    <string>%FETCH_RELEASE_NOTES%</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>Processor</key>
+                <string>CreativeCloudPackager</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>package_name</key>
+                    <string>%NAME%</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>Processor</key>
+                <string>EndOfCheckPhase</string>
+            </dict>
+            <dict>
+                <key>Processor</key>
+                <string>CreativeCloudVersioner</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
