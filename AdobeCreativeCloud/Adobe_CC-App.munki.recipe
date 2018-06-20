@@ -93,7 +93,7 @@
                     <key>pkg_path</key>
                     <string>%RECIPE_CACHE_DIR%/%NAME%_Install-%user_facing_version%.dmg</string>
                     <key>uninstaller_pkg_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%_Uninstall-%user_facing_version%.dmg</string>
+                    <string></string>
                     <key>repo_subdirectory</key>
                     <string>%MUNKI_REPO_SUBDIR%</string>
                 </dict>
