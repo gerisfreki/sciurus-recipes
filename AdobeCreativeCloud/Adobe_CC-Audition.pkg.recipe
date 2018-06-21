@@ -9,7 +9,7 @@
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>%displayName%</string>
+            <string>Adobe CC Audition</string>
             <key>FETCH_ICON</key>
             <string>false</string>
             <key>FETCH_RELEASE_NOTES</key>
