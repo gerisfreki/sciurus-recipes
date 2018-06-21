@@ -29,7 +29,7 @@
                     <string>testing</string>
                 </array>
                 <key>display_name</key>
-                <string>Adobe CC Audition</string>
+                <string>%displayName%</string>
                 <key>developer</key>
                 <string>Adobe</string>
                 <key>name</key>

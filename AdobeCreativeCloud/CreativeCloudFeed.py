@@ -404,7 +404,7 @@ class CreativeCloudFeed(Processor):
                 self.env['minimum_os_version'] = compatibility_range.split('-')[0]
             else:
                 # hacky workaround to avoid packager bailing when there is no minimum os version
-                self.env['minimum_os_version'] = ''
+                self.env['minimum_os_version'] = '10.13.0'
 
             # output variable naming has been kept as close to pkginfo names as possible in order to feed munkiimport
             self.env['product_info_url'] = product.get('productInfoPage')
