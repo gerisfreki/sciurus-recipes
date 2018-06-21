@@ -55,7 +55,7 @@
                         <key>sapCode</key>
                         <string>AAM</string>
                         <key>baseVersion</key>
-                        <string>null</string>
+                        <string></string>
                         <key>version</key>
                         <string>latest</string>
                     </dict>
