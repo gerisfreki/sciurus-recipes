@@ -28,7 +28,7 @@
 
                 <!-- Updates Enabled -->
                 <key>updatesEnabled</key>
-                <false/>
+                <true/>
 
                 <!-- Users may install apps via the Apps panel -->
                 <key>appsPanelEnabled</key>

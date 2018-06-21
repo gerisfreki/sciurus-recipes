@@ -5,11 +5,11 @@
         <key>Description</key>
         <string></string>
         <key>Identifier</key>
-        <string>lan.sciurus.pkg.Adobe.CC.CreativeCloudClient</string>
+        <string>lan.sciurus.pkg.Adobe.CC.DesignStarterPack</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Adobe CC CCC</string>
+            <string>Adobe CC DesignStarterPack</string>
             <key>FETCH_ICON</key>
             <string>false</string>
             <key>FETCH_RELEASE_NOTES</key>
@@ -51,11 +51,27 @@
                 <!-- Products -->
                 <key>Products</key>
                 <array>
-                    <dict>
+                    <dict> <!-- Illustrator -->
                         <key>sapCode</key>
-                        <string>KCCC</string>
+                        <string>ILST</string>
                         <key>baseVersion</key>
-                        <string></string>
+                        <string>21.0.0</string>
+                        <key>version</key>
+                        <string>latest</string>
+                    </dict>
+                    <dict> <!-- Photoshop -->
+                        <key>sapCode</key>
+                        <string>PHSP</string>
+                        <key>baseVersion</key>
+                        <string>19.0</string>
+                        <key>version</key>
+                        <string>latest</string>
+                    </dict>
+                    <dict> <!-- InDesign -->
+                        <key>sapCode</key>
+                        <string>IDSN</string>
+                        <key>baseVersion</key>
+                        <string>13.0</string>
                         <key>version</key>
                         <string>latest</string>
                     </dict>
