@@ -51,11 +51,35 @@
                 <!-- Products -->
                 <key>Products</key>
                 <array>
-                    <dict>
+                    <dict><!-- Photoshop -->
                         <key>sapCode</key>
                         <string>PHSP</string>
                         <key>baseVersion</key>
                         <string>19.0</string>
+                        <key>version</key>
+                        <string>latest</string>
+                    </dict>
+                    <dict><!-- STI ColorCommonSet -->
+                        <key>sapCode</key>
+                        <string>COCM</string>
+                        <key>baseVersion</key>
+                        <string>1.0</string>
+                        <key>version</key>
+                        <string>latest</string>
+                    </dict>
+                    <dict><!-- STI ColorCommonSet -->
+                        <key>sapCode</key>
+                        <string>COCM</string>
+                        <key>baseVersion</key>
+                        <string>1.0</string>
+                        <key>version</key>
+                        <string>latest</string>
+                    </dict>
+                    <dict><!-- Camera Raw -->
+                        <key>sapCode</key>
+                        <string>ACR</string>
+                        <key>baseVersion</key>
+                        <string>9.6</string>
                         <key>version</key>
                         <string>latest</string>
                     </dict>
