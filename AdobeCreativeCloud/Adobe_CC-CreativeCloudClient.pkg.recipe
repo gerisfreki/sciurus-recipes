@@ -5,7 +5,7 @@
         <key>Description</key>
         <string></string>
         <key>Identifier</key>
-        <string>lan.sciurus.pkg.Adobe.CC.CCApp</string>
+        <string>lan.sciurus.pkg.Adobe.CC.CreativeCloudClient</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
