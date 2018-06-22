@@ -5,7 +5,7 @@
         <key>Description</key>
         <string></string>
         <key>Identifier</key>
-        <string>lan.sciurus.munki.Adobe.CC.AcrobatDC</string>
+        <string>lan.sciurus.munki.Adobe.CC.Dreamweaver</string>
         <key>Input</key>
         <dict>
             <key>MUNKI_REPO_SUBDIR</key>
@@ -39,7 +39,7 @@
         <key>MinimumVersion</key>
         <string>1.0.0</string>
         <key>ParentRecipe</key>
-        <string>lan.sciurus.pkg.Adobe.CC.AcrobatDC</string>
+        <string>lan.sciurus.pkg.Adobe.CC.Dreamweaver</string>
         <key>Process</key>
         <array>
             <!-- Build the installer DMG for Munki containing the entire Build directory,
