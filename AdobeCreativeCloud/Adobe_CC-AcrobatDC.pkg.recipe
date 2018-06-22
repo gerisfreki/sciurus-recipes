@@ -5,11 +5,11 @@
         <key>Description</key>
         <string></string>
         <key>Identifier</key>
-        <string>lan.sciurus.pkg.Adobe.CC.AAM</string>
+        <string>lan.sciurus.pkg.Adobe.CC.AcrobatDC</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Adobe CC Application Manager</string>
+            <string>Adobe CC Acrobat DC</string>
             <key>FETCH_ICON</key>
             <string>false</string>
             <key>FETCH_RELEASE_NOTES</key>
@@ -53,7 +53,7 @@
                 <array>
                     <dict>
                         <key>sapCode</key>
-                        <string>AAM</string>
+                        <string>APRO</string>
                         <key>baseVersion</key>
                         <string></string>
                         <key>version</key>
