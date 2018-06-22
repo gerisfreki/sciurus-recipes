@@ -55,7 +55,7 @@
                         <key>sapCode</key>
                         <string>KCCC</string>
                         <key>baseVersion</key>
-                        <string>None</string>
+                        <string>4.5</string>
                         <key>version</key>
                         <string>latest</string>
                     </dict>
