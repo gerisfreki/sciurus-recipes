@@ -1,37 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Description</key>
-	<string>Downloads the current version of FileZilla. Specify the channel via %NAME%.</string>
-	<key>Identifier</key>
-	<string>lan.sciurus.download.FileZilla</string>
-	<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-	<true />
-	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>FileZilla</string>
-	</dict>
-	<key>Process</key>
-	<array>
+		<key>Description</key>
+		<string>Downloads the current version of FileZilla. Specify the channel via %NAME%.</string>
+		<key>Identifier</key>
+		<string>lan.sciurus.download.FileZilla</string>
+		<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+		<true />
+		<key>Input</key>
 		<dict>
-			<key>Arguments</key>
+			<key>NAME</key>
+			<string>FileZilla</string>
+		</dict>
+		<key>Process</key>
+		<array>
 			<dict>
-				<key>product_name</key>
-				<string>%NAME%</string>
+				<key>Arguments</key>
+				<dict>
+					<key>product_name</key>
+					<string>%NAME%</string>
+				</dict>
+				<key>Processor</key>
+				<string>FileZillaURLProvider</string>
 			</dict>
-			<key>Processor</key>
-			<string>FileZillaURLProvider</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>EndOfCheckPhase</string>
-		</dict>
-	</array>
-</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>CHECK_FILESIZE_ONLY</key>
+					<true/>
+					<key>filename</key>
+					<string>%NAME%.tar.bz2</string>
+				</dict>
+				<key>Processor</key>
+				<string>URLDownloader</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>destination_path</key>
+					<string>%RECIPE_CACHE_DIR%/downloads</string>
+				</dict>
+				<key>Processor</key>
+				<string>Unarchiver</string>
+			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>EndOfCheckPhase</string>
+			</dict>
+			<dict>
+	                        <key>Arguments</key>
+	                        <dict>
+	                                <key>archive_path</key>
+	                                <string>%pathname%</string>
+	                                <key>destination_path</key>
+	                                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+	                                <key>purge_destination</key>
+	                                <true/>
+	                        </dict>
+	                        <key>Processor</key>
+	                        <string>Unarchiver</string>
+	                </dict>
+			<dict>
+				<key>Processor</key>
+				<string>Unarchiver</string>
+			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>CodeSignatureVerifier</string>
+				<key>Arguments</key>
+				<dict>
+					<key>input_path</key>
+					<string>%RECIPE_CACHE_DIR%/%NAME%/FileZilla.app</string>
+					<key>requirement</key>
+					<string>identifier "org.filezilla-project.filezilla" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "5VPGKXL75N"</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
 </plist>
