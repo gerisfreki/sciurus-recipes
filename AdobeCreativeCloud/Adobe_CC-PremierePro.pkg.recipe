@@ -55,7 +55,7 @@
                         <key>sapCode</key>
                         <string>PPRO</string>
                         <key>baseVersion</key>
-                        <string>12.0.0</string>
+                        <string>13.0.0</string>
                         <key>version</key>
                         <string>latest</string>
                     </dict>
