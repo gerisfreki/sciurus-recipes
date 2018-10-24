@@ -57,7 +57,7 @@
                         <key>baseVersion</key>
                         <string>19.0</string>
                         <key>version</key>
-                        <string>IncludeUpdates</string>
+                        <string>latest</string>
                     </dict>
                 </array>
             </dict>
