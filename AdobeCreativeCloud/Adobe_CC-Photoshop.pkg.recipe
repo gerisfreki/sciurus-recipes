@@ -55,7 +55,7 @@
                         <key>sapCode</key>
                         <string>PHSP</string>
                         <key>baseVersion</key>
-                        <string>20.0</string>
+                        <string>19.0</string>
                         <key>version</key>
                         <string>IncludeUpdates</string>
                     </dict>
