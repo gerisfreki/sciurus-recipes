@@ -30,9 +30,9 @@ __all__ = ["MSOffice2016URLandUpdateInfoProvider"]
 # CULTURE_CODE defaulting to 'en-US' as the installers and updates seem to be
 # multilingual.
 CULTURE_CODE = "0409"
-BASE_URL = "https://officecdn.microsoft.com/pr/%s/OfficeMac/%s.xml"
+BASE_URL = "https://officecdn.microsoft.com/pr/%s/MacAutoupdate/%s.xml"
 
-# These can be easily be found as "Application ID" in ~/Library/Preferences/com.microsoft.autoupdate2.plist on a 
+# These can be easily be found as "Application ID" in ~/Library/Preferences/com.microsoft.autoupdate2.plist on a
 # machine that has Microsoft AutoUpdate.app installed on it.
 #
 # Note that Skype, 'MSFB' has a '16' after it, AutoUpdate has a '03' after it while all the other products have '15'
@@ -50,7 +50,7 @@ PROD_DICT = {
     }
 }
 LOCALE_ID_INFO_URL = "https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
-SUPPORTED_VERSIONS = ["latest", "latest-delta"]
+SUPPORTED_VERSIONS = ["latest", "latest-delta", "latest-standalone"]
 DEFAULT_VERSION = "latest"
 CHANNELS = {
     'Production': 'C1297A47-86C4-4C1F-97FA-950631F94777',
@@ -213,11 +213,12 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
 
         metadata = plistlib.readPlistFromString(data)
         item = {}
-        # According to MS, update feeds for a given 'channel' will only ever
-        # have two items: a full and a delta. Delta updates will have a
-        # 'FullUpdaterLocation' key, so filter by the array according to
-        # which item has that key.
-        if self.env["version"] == "latest":
+        # Update feeds for a given 'channel' will have either combo or delta
+        # pkg urls, with delta's additionally having a 'FullUpdaterLocation' key.
+        # We populate the item dict with the appropriate section of the metadata
+        # output, and do string replacement on the pattern of the URL in the
+        # case of a Standalone app request.
+        if self.env["version"] == "latest" or self.env["version"] == "latest-standalone":
             item = [u for u in metadata if not u.get("FullUpdaterLocation")]
         elif self.env["version"] == "latest-delta":
             item = [u for u in metadata if u.get("FullUpdaterLocation")]
@@ -225,6 +226,12 @@ class MSOffice2016URLandUpdateInfoProvider(Processor):
             raise ProcessorError("Could not find an applicable update in "
                                  "update metadata.")
         item = item[0]
+
+        if self.env["version"] == "latest-standalone":
+            p = re.compile(ur'(^[a-zA-Z0-9:/.-]*_[a-zA-Z]*_)(.*)Updater.pkg')
+            url = item["Location"]
+            (firstGroup, secondGroup) = re.search(p, url).group(1, 2)
+            item["Location"] = firstGroup + secondGroup + "Installer.pkg"
 
         self.env["url"] = item["Location"]
         self.output("Found URL %s" % self.env["url"])
