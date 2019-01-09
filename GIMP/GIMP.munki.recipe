@@ -44,7 +44,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>io.github.hjuutilainen.download.GIMP</string>
+	<string>lan.sciurus.download.GIMP</string>
 	<key>Process</key>
 	<array>
 		<dict>
