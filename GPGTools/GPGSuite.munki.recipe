@@ -47,7 +47,7 @@
         <key>MinimumVersion</key>
         <string>0.2.0</string>
         <key>ParentRecipe</key>
-        <string>lan.sciurus.verify.GPGSuite</string>
+        <string>lan.sciurus.download.GPGSuite</string>
         <key>Process</key>
         <array>
             <dict>
