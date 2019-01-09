@@ -37,7 +37,7 @@
         <key>MinimumVersion</key>
         <string>0.6.1</string>
         <key>ParentRecipe</key>
-        <string>lan.sciurus.pkg.Keka</string>
+        <string>lan.sciurus.download.Keka</string>
         <key>Process</key>
         <array>
             <dict>
