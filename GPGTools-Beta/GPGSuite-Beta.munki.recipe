@@ -30,8 +30,8 @@
                 <string>GPGSuite Beta</string>
                 <key>name</key>
                 <string>%NAME%</string>
-                <key>minimum_os_version</key>
-                <string>10.6.0</string>
+			    <key>minimum_os_version</key>
+			    <string>10.12</string>
                 <key>blocking_applications</key>
                 <array>
                     <string>Mail</string>
@@ -56,7 +56,7 @@
                     <key>flat_pkg_path</key>
                     <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Install.pkg</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <string>%RECIPE_CACHE_DIR%/unpack</string>
                 </dict>
                 <key>Processor</key>
                 <string>FlatPkgUnpacker</string>
@@ -65,9 +65,9 @@
                 <key>Arguments</key>
                 <dict>
                     <key>pkg_payload_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%/GPGKeychain_Core.pkg/Payload</string>
+                    <string>%RECIPE_CACHE_DIR%/unpack/Updater_Core.pkg/Payload</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%/Applications</string>
+                    <string>%RECIPE_CACHE_DIR%/unpack</string>
                 </dict>
                 <key>Processor</key>
                 <string>PkgPayloadUnpacker</string>
@@ -75,23 +75,22 @@
             <dict>
                 <key>Arguments</key>
                 <dict>
-                    <key>pkg_payload_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%/GPGMail_Core.pkg/Payload</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <string>%RECIPE_CACHE_DIR%/unpack/Library/Application Support/GPGTools</string>
+                    <key>source_path</key>
+                    <string>%RECIPE_CACHE_DIR%/unpack/private/tmp/org.gpgtools/updater_install</string>
                 </dict>
                 <key>Processor</key>
-                <string>PkgPayloadUnpacker</string>
+                <string>Copier</string>
             </dict>
             <dict>
                 <key>Arguments</key>
                 <dict>
                     <key>faux_root</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <string>%RECIPE_CACHE_DIR%/unpack</string>
                     <key>installs_item_paths</key>
                     <array>
-                        <string>/Applications/GPG Keychain.app</string>
-                        <string>/Library/Application Support/GPGTools/GPGMail_Updater.app</string>
+                        <string>/Library/Application Support/GPGTools/GPGSuite_Updater.app</string>
                     </array>
                     <key>version_comparison_key</key>
                     <string>CFBundleVersion</string>
@@ -104,7 +103,7 @@
                 <dict>
                     <key>path_list</key>
                     <array>
-                        <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                        <string>%RECIPE_CACHE_DIR%/unpack</string>
                     </array>
                 </dict>
                 <key>Processor</key>
