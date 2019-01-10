@@ -41,7 +41,8 @@
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
-		<dict>
+
+<!--		<dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 			<key>Arguments</key>
@@ -52,6 +53,7 @@
 				<string>identifier "org.pdfsam.community.App" and certificate leaf = H"28d1249831616e9acff9bc32756f699f559a2efe"</string>
 			</dict>
 		</dict>
+-->
 	</array>
 </dict>
 </plist>
