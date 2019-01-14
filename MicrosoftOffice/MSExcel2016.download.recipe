@@ -37,7 +37,7 @@ installer for the given CHANNEL. 'latest-standalone' does not support
         <key>NAME</key>
         <string>MSExcel2016</string>
         <key>VERSION</key>
-        <string>latest</string>
+        <string>latest-standalone</string>
     </dict>
     <key>Process</key>
     <array>
