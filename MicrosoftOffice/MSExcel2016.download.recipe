@@ -17,15 +17,17 @@ extracted from the Microsoft update metadata. See
 https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx
 for more information about locale IDs.
 
-VERSION currently only supports one value: 'latest', which will download
-the latest full update for the given CHANNEL.
+VERSION supports three values: 'latest', which will download
+the latest full update for the given CHANNEL, 'latest-delta',
+which will download the latest delta update for the given CHANNEL,
+and 'latest-standalone' which will download the latest standalone
+installer for the given CHANNEL. 'latest-standalone' does not support
+'InsiderFast' CHANNEL.
 </string>
-    <key>Identifier</key>
+<key>Identifier</key>
     <string>lan.sciurus.download.MSExcel2016</string>
     <key>MinimumVersion</key>
     <string>0.4.2</string>
-    <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-    <true />
     <key>Input</key>
     <dict>
         <key>CHANNEL</key>
