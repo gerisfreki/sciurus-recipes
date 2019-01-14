@@ -33,11 +33,11 @@ installer for the given CHANNEL. 'latest-standalone' does not support
         <key>CHANNEL</key>
         <string>Production</string>
         <key>LOCALE_ID</key>
-        <string>1031</string>
+        <string>1033</string>
         <key>NAME</key>
         <string>MSExcel2016</string>
         <key>VERSION</key>
-        <string>latest-standalone</string>
+        <string>latest</string>
     </dict>
     <key>Process</key>
     <array>
