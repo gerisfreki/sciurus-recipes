@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>clan.sciurus.pkg.msword365</string>
+    <string>lan.sciurus.pkg.msword365</string>
     <key>Process</key>
     <array>
         <dict>
