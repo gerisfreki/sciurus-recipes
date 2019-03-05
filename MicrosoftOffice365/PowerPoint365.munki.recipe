@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Identifier</key>
+    <string>lan.sciurus.munki.MSPowerPoint365</string>
+    <key>MinimumVersion</key>
+    <string>0.4.2</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>MSPowerPoint365</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>Office/MS Office 365/%NAME%</string>
+        <key>munki_required_update_name</key>
+        <string></string>
+        <key>pkginfo</key>
+        <dict>
+            <key>blocking_applications</key>
+            <array>
+                <string>Microsoft PowerPoint</string>
+                <string>Microsoft Error Reporting</string>
+                <string>Microsoft AutoUpdate</string>
+            </array>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>developer</key>
+            <string>Microsoft</string>
+            <key>display_name</key>
+            <string>Microsoft PowerPoint 365 for Mac</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>lan.sciurus.pkg.MSPowerPoint365</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+                <key>version_comparison_key</key>
+                <string>CFBundleVersion</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
