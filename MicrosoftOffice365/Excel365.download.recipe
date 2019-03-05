@@ -3,21 +3,21 @@
 <plist version="1.0">
    <dict>
       <key>Description</key>
-      <string>Downloads the latest Microsoft Word installer package for Office 365.</string>
+      <string>Downloads the latest Microsoft Excel installer package for Office 365.</string>
       <key>Identifier</key>
-      <string>lan.sciurus.download.MSWord365</string>
+      <string>lan.sciurus.download.MSExcel365</string>
       <key>MinimumVersion</key>
       <string>1.0.0</string>
       <key>Input</key>
       <dict>
          <key>NAME</key>
-         <string>Microsoft Word</string>
+         <string>Microsoft Excel</string>
          <key>VENDOR</key>
          <string>Microsoft</string>
          <key>SOFTWARETITLE</key>
-         <string>Word</string>
+         <string>Excel</string>
          <key>PRODUCTID</key>
-         <string>525134</string>
+         <string>525135</string>
          <key>DOWNLOADURL</key>
          <string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
       </dict>

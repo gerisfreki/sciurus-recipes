@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of the Microsoft Word installer package for Office 365 and installs it.</string>
+    <string>Downloads the current release version of the Microsoft Excel installer package for Office 365 and installs it.</string>
     <key>Identifier</key>
-    <string>lan.sciurus.install.MSWord365</string>
+    <string>lan.sciurus.install.MSExcel365</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Microsoft Word</string>
+        <string>Microsoft Excel</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>lan.sciurus.pkg.MSWord365</string>
+    <string>lan.sciurus.pkg.MSExcel365</string>
     <key>Process</key>
     <array>
         <dict>
